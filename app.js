@@ -24,7 +24,7 @@ function toggleMenu() {
 
 function menuItemsDisplay() {
   setTimeout(crossMenu, 2200);
-  setTimeout(menuOn, 1700);
+  setTimeout(menuOn, 1600);
   setTimeout(displayMenuTextEmpty, 1000);
 }
 
