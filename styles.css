@@ -200,7 +200,7 @@
 
 .video-container:after {
   content: '';
-  z-index: 1;
+  z-index: -1;
   height: 100%;
   width: 100%;
   top: 0;
