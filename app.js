@@ -23,7 +23,8 @@ function toggleMenu() {
 }
 
 function menuItemsDisplay() {
-  setTimeout(menuOn, 1300);
+  setTimeout(crossMenu, 2200);
+  setTimeout(menuOn, 1700);
   setTimeout(displayMenuTextEmpty, 1000);
 }
 
@@ -32,11 +33,14 @@ function menuTextDelay() {
 }
 
 function menuOn() {
+  menuItems.style.display = 'flex';
+}
+
+function crossMenu() {
   menuText.innerHTML = '<i class="fas fa-3x fa-times"></i>';
   menuText.style.left = '7px';
   menuText.style.top = '40px';
   menuText.style.transform = 'rotate(0deg)';
-  menuItems.style.display = 'flex';
 }
 
 function displayMenuTextEmpty() {
