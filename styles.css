@@ -3,7 +3,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Barcelony';
+  src: url('./fonts/Barcelony.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'pixelFont';
+  src: url('./fonts/pixelFont.TTF') format('truetype');
 }
 
 #menu {
@@ -207,4 +215,111 @@
   left: 0;
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
+}
+
+/* intro */
+:root {
+  --primary-color: #3a4052;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.2;
+  font-family: 'Barcelony';
+  z-index: 10;
+}
+
+.focus-in-expand {
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+#intro {
+  top: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #e9cda7;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+/* curved text */
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+svg {
+  position: absolute;
+  transform: translate(-50%, -25%);
+}
+
+text {
+  font-size: 2rem;
+  fill: rgb(223, 223, 223);
+  font-family: 'PixelFont';
+}
+
+.content {
+  z-index: 2;
+}
+
+svg {
+  width: 100%;
 }
