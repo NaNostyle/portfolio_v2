@@ -31,7 +31,7 @@ function menuItemsDisplay() {
   setTimeout(crossMenu, 2100);
   setTimeout(menuOn, 1600);
   setTimeout(displayMenuTextEmpty, 1000);
-  setTimeout(moveName, 1600);
+  moveName();
 }
 
 function menuTextDelay() {
