@@ -5,11 +5,22 @@
   list-style: none;
 }
 
+#menu {
+  cursor: pointer;
+}
+
 .menu-scale-up {
   position: relative;
   border-radius: 50%;
   background-color: blue;
   animation: scaleup 2s;
+}
+
+.menu-scale-down {
+  position: relative;
+  border-radius: 50%;
+  background-color: blue;
+  animation: scaledown 2s;
 }
 
 @keyframes scaleup {
