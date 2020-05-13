@@ -34,6 +34,8 @@ function menuTextDelay() {
 
 function menuOn() {
   menuItems.style.display = 'flex';
+  menuItems.style.top = '0px';
+  menuItems.style.position = 'absolute';
 }
 
 function crossMenu() {
