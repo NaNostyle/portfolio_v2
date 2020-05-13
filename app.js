@@ -2,6 +2,7 @@ const menuClick = document.querySelector('.menu-click');
 const menuItems = document.querySelector('.menu-items');
 const menu = document.querySelector('#menu');
 const menuText = document.querySelector('.menu-text');
+const name = document.querySelector('.name');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -51,3 +52,11 @@ function displayMenuTextEmpty() {
 function displayMenuTextFull() {
   menuText.textContent = 'Menu';
 }
+
+// function moveName() {
+//   name.classList.add('name-move-up');
+// }
+
+// function nameMoveBack() {
+//   name.classList.add('name-move-back');
+// }
