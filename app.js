@@ -23,7 +23,7 @@ function toggleMenu() {
 }
 
 function menuItemsDisplay() {
-  setTimeout(menuOn, 1500);
+  setTimeout(menuOn, 1000);
   setTimeout(displayMenuTextEmpty, 1000);
 }
 
