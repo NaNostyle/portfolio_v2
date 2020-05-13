@@ -11,6 +11,9 @@ function toggleMenu() {
     menuText.textContent = 'Menu';
     menuItems.style.display = 'none';
     menu.classList.add('menu-scale-down');
+    menuText.style.top = '45px';
+    menuText.style.left = '0px';
+    menuText.style.transform = 'rotate(320deg)';
   } else {
     menu.classList.add('menu-scale-up');
     menu.classList.remove('menu-scale-down');
@@ -25,7 +28,9 @@ function menuItemsDisplay() {
 
 function menuOn() {
   menuText.innerHTML = '<i class="fas fa-3x fa-times"></i>';
-  menuText.style.left = '10px';
+  menuText.style.left = '7px';
+  menuText.style.top = '40px';
+  menuText.style.transform = 'rotate(0deg)';
   menuItems.style.display = 'flex';
 }
 
