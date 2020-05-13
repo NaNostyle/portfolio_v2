@@ -236,12 +236,12 @@ h1 {
   z-index: 10;
 }
 .name-move-up {
-  animation: name-move-up 1.5s forwards;
+  animation: name-move-up 2s forwards;
   position: absolute;
 }
 
 .name-move-back {
-  animation: name-move-back 1.5s forwards;
+  animation: name-move-back 2s forwards;
   position: absolute;
 }
 
