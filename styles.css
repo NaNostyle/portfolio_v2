@@ -45,11 +45,11 @@
   0% {
     transform: translateX(45vw) scale(15) rotate(40deg);
   }
-  25% {
-    transform: translateX(45vw) scale(3) rotate(40deg);
-  }
   50% {
     transform: translateX(45vw) rotate(40deg);
+  }
+  75% {
+    transform: translateX(45vw);
   }
   100% {
     transform: translateX(0px);

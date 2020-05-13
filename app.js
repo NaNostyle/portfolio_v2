@@ -8,7 +8,8 @@ menuClick.addEventListener('click', toggleMenu);
 function toggleMenu() {
   if (menu.classList.contains('menu-scale-up')) {
     menu.classList.remove('menu-scale-up');
-    menuText.textContent = 'Menu';
+    menuText.textContent = '';
+    menuTextDelay();
     menuItems.style.display = 'none';
     menu.classList.add('menu-scale-down');
     menuText.style.top = '50px';
@@ -23,7 +24,11 @@ function toggleMenu() {
 
 function menuItemsDisplay() {
   setTimeout(menuOn, 2000);
-  setTimeout(displayMenuText, 1000);
+  setTimeout(displayMenuTextEmpty, 1000);
+}
+
+function menuTextDelay() {
+  setTimeout(displayMenuTextFull, 1000);
 }
 
 function menuOn() {
@@ -34,6 +39,9 @@ function menuOn() {
   menuItems.style.display = 'flex';
 }
 
-function displayMenuText() {
+function displayMenuTextEmpty() {
   menuText.textContent = '';
+}
+function displayMenuTextFull() {
+  menuText.textContent = 'Menu';
 }
