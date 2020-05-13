@@ -11,7 +11,7 @@ function toggleMenu() {
     menuText.textContent = 'Menu';
     menuItems.style.display = 'none';
     menu.classList.add('menu-scale-down');
-    menuText.style.top = '45px';
+    menuText.style.top = '50px';
     menuText.style.left = '0px';
     menuText.style.transform = 'rotate(320deg)';
   } else {
