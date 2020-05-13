@@ -16,9 +16,13 @@ function toggleMenu() {
     menuText.style.top = '50px';
     menuText.style.left = '0px';
     menuText.style.transform = 'rotate(320deg)';
+    name.classList.add('name-move-back');
+    name.style.position = 'relative';
   } else {
     menu.classList.add('menu-scale-up');
     menu.classList.remove('menu-scale-down');
+    name.classList.remove('name-move-back');
+
     menuItemsDisplay();
   }
 }
@@ -27,6 +31,7 @@ function menuItemsDisplay() {
   setTimeout(crossMenu, 2100);
   setTimeout(menuOn, 1600);
   setTimeout(displayMenuTextEmpty, 1000);
+  setTimeout(moveName, 1600);
 }
 
 function menuTextDelay() {
@@ -53,10 +58,6 @@ function displayMenuTextFull() {
   menuText.textContent = 'Menu';
 }
 
-// function moveName() {
-//   name.classList.add('name-move-up');
-// }
-
-// function nameMoveBack() {
-//   name.classList.add('name-move-back');
-// }
+function moveName() {
+  name.classList.add('name-move-up');
+}
