@@ -11,7 +11,7 @@ function toggleMenu() {
     menu.classList.remove('menu-scale-up');
     menuText.textContent = '';
     menuTextDelay();
-    menuItems.style.display = 'none';
+    menuItems.classList.add('menu-items-fadeout');
     menu.classList.add('menu-scale-down');
     menuText.style.top = '50px';
     menuText.style.left = '0px';
@@ -20,9 +20,9 @@ function toggleMenu() {
     name.style.position = 'relative';
   } else {
     menu.classList.add('menu-scale-up');
+    menuItems.classList.remove('menu-items-fadeout');
     menu.classList.remove('menu-scale-down');
     name.classList.remove('name-move-back');
-
     menuItemsDisplay();
   }
 }
@@ -36,6 +36,11 @@ function menuItemsDisplay() {
 
 function menuTextDelay() {
   setTimeout(displayMenuTextFull, 1000);
+  setTimeout(hideMenuItems, 1000);
+}
+
+function hideMenuItems() {
+  menuItems.style.display = 'none';
 }
 
 function menuOn() {
@@ -43,6 +48,8 @@ function menuOn() {
   menuItems.style.top = '0px';
   menuItems.style.position = 'absolute';
 }
+
+function menuOff() {}
 
 function crossMenu() {
   menuText.innerHTML = '<i class="fas fa-3x fa-times"></i>';
