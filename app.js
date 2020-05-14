@@ -58,7 +58,7 @@ function displayMenuTextEmpty() {
 function menuOn() {
   menuItems.style.display = 'flex';
   menuItems.style.top = '0px';
-  menuItems.style.position = 'absolute';
+  menuItems.style.position = 'fixed';
 }
 
 function portraitDelayEntrance() {
@@ -88,6 +88,7 @@ function displayMenuTextFull() {
 
 function moveName() {
   name.classList.add('name-move-up');
+  name.style.position = 'fixed';
 }
 
 contactLink.addEventListener('click', contactPageRedirect);
