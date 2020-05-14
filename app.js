@@ -4,6 +4,7 @@ const menu = document.querySelector('#menu');
 const menuText = document.querySelector('.menu-text');
 const name = document.querySelector('.name');
 const svg = document.querySelector('.svg');
+const portrait = document.querySelector('.portrait');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -35,12 +36,25 @@ function menuItemsDisplay() {
   setTimeout(crossMenu, 2100);
   setTimeout(menuOn, 1600);
   setTimeout(displayMenuTextEmpty, 1000);
+  setTimeout(portraitDelayEntrance, 1400);
   moveName();
 }
 
 function menuTextDelay() {
   setTimeout(displayMenuTextFull, 1000);
   setTimeout(hideMenuItems, 1000);
+  portraitExit();
+}
+
+function portraitDelayEntrance() {
+  portrait.style.display = 'block';
+  portrait.classList.add('portrait-entrance');
+  portrait.classList.add('portrait-exit');
+}
+
+function portraitExit() {
+  portrait.classList.remove('portrait-entrance');
+  portrait.classList.add('portrait-exit');
 }
 
 function hideMenuItems() {
