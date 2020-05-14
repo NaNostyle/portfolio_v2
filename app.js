@@ -5,6 +5,9 @@ const menuText = document.querySelector('.menu-text');
 const name = document.querySelector('.name');
 const svg = document.querySelector('.svg');
 const portrait = document.querySelector('.portrait');
+const contactLink = document.querySelector('.contact-link');
+const entirePage = document.querySelector('.entire-page');
+const allMenuLinks = document.querySelectorAll('li');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -84,4 +87,17 @@ function displayMenuTextFull() {
 
 function moveName() {
   name.classList.add('name-move-up');
+}
+
+contactLink.addEventListener('click', contactPageRedirect);
+
+function contactPageRedirect() {
+  portrait.classList.add('portrait-exit-on-link-click');
+  portrait.classList.remove('portrait-entrance');
+  portrait.classList.remove('portrait-exit');
+  menuItems.classList.remove('menu-items-appear');
+  menuItems.classList.add('menu-items-fadeout');
+  setTimeout(function () {
+    window.location.href = './contact.html';
+  }, 1600);
 }

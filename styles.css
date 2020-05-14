@@ -212,6 +212,22 @@ font-family: 'Yatra One', cursive; */
   display: none;
 }
 
+.portrait-exit-on-link-click {
+  animation: portrait-exit-on-link-click 1.5s forwards;
+}
+
+@keyframes portrait-exit-on-link-click {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(40vw);
+  }
+}
+
 .portrait-exit {
   animation: portrait-exit 1.5s forwards;
 }
@@ -253,6 +269,12 @@ h1 {
   font-family: 'Barcelony';
   z-index: 11;
 }
+
+/* .name {
+  position: absolute;
+  top: 10px;
+
+} */
 
 .name-move-up {
   animation: name-move-up 2s forwards;
