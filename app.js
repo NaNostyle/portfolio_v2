@@ -40,16 +40,33 @@ function menuItemsDisplay() {
   moveName();
 }
 
-function menuTextDelay() {
-  setTimeout(displayMenuTextFull, 1000);
-  setTimeout(hideMenuItems, 1000);
-  portraitExit();
+function crossMenu() {
+  menuText.innerHTML = '<i class="fas fa-3x fa-times"></i>';
+  menuText.style.left = '7px';
+  menuText.style.top = '40px';
+  menuText.style.transform = 'rotate(0deg)';
+}
+
+function displayMenuTextEmpty() {
+  menuText.textContent = '';
+}
+
+function menuOn() {
+  menuItems.style.display = 'flex';
+  menuItems.style.top = '0px';
+  menuItems.style.position = 'absolute';
 }
 
 function portraitDelayEntrance() {
   portrait.style.display = 'block';
   portrait.classList.add('portrait-entrance');
   portrait.classList.add('portrait-exit');
+}
+
+function menuTextDelay() {
+  setTimeout(displayMenuTextFull, 1000);
+  setTimeout(hideMenuItems, 1000);
+  portraitExit();
 }
 
 function portraitExit() {
@@ -61,24 +78,6 @@ function hideMenuItems() {
   menuItems.style.display = 'none';
 }
 
-function menuOn() {
-  menuItems.style.display = 'flex';
-  menuItems.style.top = '0px';
-  menuItems.style.position = 'absolute';
-}
-
-function menuOff() {}
-
-function crossMenu() {
-  menuText.innerHTML = '<i class="fas fa-3x fa-times"></i>';
-  menuText.style.left = '7px';
-  menuText.style.top = '40px';
-  menuText.style.transform = 'rotate(0deg)';
-}
-
-function displayMenuTextEmpty() {
-  menuText.textContent = '';
-}
 function displayMenuTextFull() {
   menuText.textContent = 'Menu';
 }
