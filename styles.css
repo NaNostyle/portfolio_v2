@@ -194,11 +194,12 @@ i {
 /* intro */
 .portrait {
   position: absolute;
-  right: 9vw;
+  right: 7vw;
   z-index: 11;
   width: 100px;
-  top: 13vh;
+  top: 12vh;
   border-radius: 50%;
+  border: solid white 2px;
   display: none;
 }
 
@@ -210,7 +211,7 @@ i {
   0% {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
-    opacity: 0.77;
+    opacity: 0.85;
   }
   100% {
     -webkit-transform: rotateX(80deg);
@@ -232,7 +233,7 @@ i {
   100% {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
-    opacity: 0.77;
+    opacity: 0.85;
   }
 }
 
