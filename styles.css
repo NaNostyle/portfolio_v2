@@ -104,6 +104,19 @@
   letter-spacing: 5px;
 }
 
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Varela', sans-serif;
+font-family: 'Yatra One', cursive; */
+
+.menu-text {
+  font-family: 'Abril Fatface', cursive;
+}
+
 .menu-items a {
   color: white;
   background-color: rgb(129, 12, 12);
