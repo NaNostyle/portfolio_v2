@@ -3,6 +3,7 @@ const menuItems = document.querySelector('.menu-items');
 const menu = document.querySelector('#menu');
 const menuText = document.querySelector('.menu-text');
 const name = document.querySelector('.name');
+const svg = document.querySelector('.svg');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -11,6 +12,7 @@ function toggleMenu() {
     menu.classList.remove('menu-scale-up');
     menuText.textContent = '';
     menuTextDelay();
+    svg.classList.remove('svg-fade-out');
     menuItems.classList.add('menu-items-fadeout');
     menu.classList.add('menu-scale-down');
     menuText.style.top = '50px';
@@ -19,6 +21,8 @@ function toggleMenu() {
     name.classList.add('name-move-back');
     name.style.position = 'relative';
   } else {
+    svg.classList.add('svg-fade-out');
+    name.classList.remove('name-intro');
     menu.classList.add('menu-scale-up');
     menuItems.classList.remove('menu-items-fadeout');
     menu.classList.remove('menu-scale-down');

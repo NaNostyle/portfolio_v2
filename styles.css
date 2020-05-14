@@ -298,6 +298,18 @@ svg {
   transform: translate(-50%, -25%);
 }
 
+.svg-fade-out {
+  animation: svg-fade-out 1.5s forwards;
+}
+@keyframes svg-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 text {
   font-size: 2.5rem;
   fill: rgb(223, 223, 223);
