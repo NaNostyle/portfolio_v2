@@ -111,22 +111,6 @@
   animation: menu-items-appear 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-@-webkit-keyframes menu-items-appear {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
 @keyframes menu-items-appear {
   0% {
     letter-spacing: -0.5em;
@@ -145,46 +129,26 @@
 }
 
 /* Menu items disapearing */
-.tracking-out-expand-fwd {
-  -webkit-animation: tracking-out-expand-fwd 0.8s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: tracking-out-expand-fwd 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    both;
+.menu-items-fadeout {
+  animation: menu-items-fadeout 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-@-webkit-keyframes tracking-out-expand-fwd {
+@keyframes menu-items-fadeout {
   0% {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1;
   }
-  60% {
-    opacity: 0.8;
+  40% {
+    opacity: 0.6;
   }
   100% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
     opacity: 0;
   }
 }
-@keyframes tracking-out-expand-fwd {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  100% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
-    opacity: 0;
-  }
-}
-
 /* Styles from portfolio */
 .video-container {
   position: absolute;
@@ -219,14 +183,6 @@
 }
 
 /* intro */
-:root {
-  --primary-color: #3a4052;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-}
 
 h1 {
   font-weight: 300;
@@ -343,7 +299,7 @@ svg {
 }
 
 text {
-  font-size: 2rem;
+  font-size: 2.5rem;
   fill: rgb(223, 223, 223);
   font-family: 'PixelFont';
 }
