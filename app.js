@@ -104,10 +104,10 @@ function removeEltOnRedirect() {
 }
 
 function cvPageRedirect() {
-  var cvLink = './cv.html';
+  var cvLinkHref = './cv.html';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = cvLink;
+    window.location.href = cvLinkHref;
   }, 1600);
 }
 
@@ -120,17 +120,17 @@ function contactPageRedirect() {
 }
 
 function homePageRedirect() {
-  var homeLink = './home.html';
+  var homeLinkHref = './index.html';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = homeLink;
+    window.location.href = homeLinkHref;
   }, 1600);
 }
 
 function workPageRedirect() {
-  var workLink = './work.html';
+  var workLinkHref = './work.html';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = workLink;
+    window.location.href = workLinkHref;
   }, 1600);
 }
