@@ -6,8 +6,9 @@ const name = document.querySelector('.name');
 const svg = document.querySelector('.svg');
 const portrait = document.querySelector('.portrait');
 const contactLink = document.querySelector('.contact-link');
-const entirePage = document.querySelector('.entire-page');
-const allMenuLinks = document.querySelectorAll('li');
+const homeLink = document.querySelector('.home-link');
+const cvLink = document.querySelector('.cv-link');
+const workLink = document.querySelector('.work-link');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -90,14 +91,46 @@ function moveName() {
 }
 
 contactLink.addEventListener('click', contactPageRedirect);
+homeLink.addEventListener('click', homePageRedirect);
+workLink.addEventListener('click', workPageRedirect);
+cvLink.addEventListener('click', cvPageRedirect);
 
-function contactPageRedirect() {
+function removeEltOnRedirect() {
   portrait.classList.add('portrait-exit-on-link-click');
   portrait.classList.remove('portrait-entrance');
   portrait.classList.remove('portrait-exit');
   menuItems.classList.remove('menu-items-appear');
   menuItems.classList.add('menu-items-fadeout');
+}
+
+function cvPageRedirect() {
+  var cvLink = './cv.html';
+  removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = './contact.html';
+    window.location.href = cvLink;
+  }, 1600);
+}
+
+function contactPageRedirect() {
+  var contactHref = './contact.html';
+  removeEltOnRedirect();
+  setTimeout(function () {
+    window.location.href = contactHref;
+  }, 1600);
+}
+
+function homePageRedirect() {
+  var homeLink = './home.html';
+  removeEltOnRedirect();
+  setTimeout(function () {
+    window.location.href = homeLink;
+  }, 1600);
+}
+
+function workPageRedirect() {
+  var workLink = './work.html';
+  removeEltOnRedirect();
+  setTimeout(function () {
+    window.location.href = workLink;
   }, 1600);
 }
