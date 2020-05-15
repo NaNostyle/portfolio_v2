@@ -423,15 +423,18 @@ h2 {
   background-color: rgb(129, 12, 12);
   color: white;
   display: inline-block;
+  font-size: 30px;
 }
 
-#work img {
+/* #work img {
   width: 80vw;
-  border-radius: 10px;
-  border-left: solid rgb(129, 12, 12);
-  border-top: solid rgb(129, 12, 12);
-  border-right: solid 10px rgb(129, 12, 12);
-}
+  background: white;
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.25);
+  border: 15px solid white;
+  border-width: 1vmin 1vmin 10vmin 1vmin;
+  overflow: hidden;
+  width: 80vmin;
+} */
 
 #work {
   text-align: center;
@@ -454,14 +457,15 @@ h2 {
 
 .img-work-overlay {
   position: absolute;
-  bottom: 0px;
-  height: 33%;
+  bottom: 4px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 0px 0px 10px 10px;
-  border-bottom: solid rgb(129, 12, 12);
-  border-left: solid rgb(129, 12, 12);
-  border-right: solid rgb(129, 12, 12);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-work-overlay p {
+  color: white;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 17px;
 }
 
 .allthecolors {
@@ -476,3 +480,15 @@ font-family: 'IBM Plex Serif', serif;
 font-family: 'Ubuntu Mono', monospace;
 font-family: 'Varela', sans-serif;
 font-family: 'Yatra One', cursive; */
+
+/* cards */
+.card {
+  width: 86vw;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.card-content {
+  background-color: rgba(129, 12, 12, 0.2);
+}
+/* fin cards */
