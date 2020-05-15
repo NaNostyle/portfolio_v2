@@ -415,6 +415,45 @@ a.anchor {
   top: -250px;
   visibility: hidden;
 }
+
+/* section projet */
+
+h2 {
+  font-family: 'IBM Plex Serif', serif;
+  background-color: rgb(129, 12, 12);
+  color: white;
+  display: inline-block;
+}
+
+#work img {
+  width: 80vw;
+}
+
+#work {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+}
+
+.img-work-overlay {
+  position: absolute;
+  bottom: 0px;
+}
+
+.allthecolors {
+  background-color: #e9cda7;
+  background-color: rgb(129, 12, 12);
+}
 /* 
 font-family: 'Abril Fatface', cursive;
 font-family: 'Concert One', cursive;
