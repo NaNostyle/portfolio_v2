@@ -24,7 +24,6 @@ function toggleMenu() {
     menuText.style.left = '0px';
     menuText.style.transform = 'rotate(320deg)';
     name.classList.add('name-move-back');
-    name.style.position = 'relative';
   } else {
     svg.classList.add('svg-fade-out');
     name.classList.remove('name-intro');
@@ -101,37 +100,48 @@ function removeEltOnRedirect() {
   portrait.classList.remove('portrait-entrance');
   portrait.classList.remove('portrait-exit');
   menuItems.classList.remove('menu-items-appear');
+  menuText.textContent = 'Menu';
+  menuText.style.transform = 'rotate(320deg)';
+  menu.classList.remove('menu-scale-up');
+  menuText.textContent = '';
+  menuTextDelay();
+  svg.classList.remove('svg-fade-out');
   menuItems.classList.add('menu-items-fadeout');
+  menu.classList.add('menu-scale-down');
+  menuText.style.top = '50px';
+  menuText.style.left = '0px';
+  menuText.style.transform = 'rotate(320deg)';
+  name.style.position = 'relative';
+  name.classList.remove('name-move-up');
+  // setTimeout(function () {
+  //   window.location.href = url;
+  // }, 1600);
 }
 
 function cvPageRedirect() {
-  var cvLinkHref = './cv.html';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = cvLinkHref;
+    window.location.href = '#cv';
   }, 1600);
 }
 
 function contactPageRedirect() {
-  var contactHref = '#contact';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = contactHref;
+    window.location.href = '#contact';
   }, 1600);
 }
 
 function homePageRedirect() {
-  var homeLinkHref = '#accueil';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = homeLinkHref;
+    window.location.href = '#accueil';
   }, 1600);
 }
 
 function workPageRedirect() {
-  var workLinkHref = '#work';
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = workLinkHref;
+    window.location.href = '#work';
   }, 1600);
 }
