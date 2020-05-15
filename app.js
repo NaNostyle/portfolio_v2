@@ -12,17 +12,22 @@ const workLink = document.querySelector('.work-link');
 
 menuClick.addEventListener('click', toggleMenu);
 
+function closeMenu() {
+  menu.classList.remove('menu-scale-up');
+  menuText.textContent = '';
+  menuTextDelay();
+  svg.classList.remove('svg-fade-out');
+  menuItems.classList.add('menu-items-fadeout');
+  menu.classList.add('menu-scale-down');
+  menuText.style.top = '50px';
+  menuText.style.left = '0px';
+  menuText.style.transform = 'rotate(320deg)';
+}
+
 function toggleMenu() {
   if (menu.classList.contains('menu-scale-up')) {
-    menu.classList.remove('menu-scale-up');
-    menuText.textContent = '';
-    menuTextDelay();
-    svg.classList.remove('svg-fade-out');
-    menuItems.classList.add('menu-items-fadeout');
-    menu.classList.add('menu-scale-down');
-    menuText.style.top = '50px';
-    menuText.style.left = '0px';
-    menuText.style.transform = 'rotate(320deg)';
+    closeMenu();
+    name.style.position = 'relative';
     name.classList.add('name-move-back');
   } else {
     svg.classList.add('svg-fade-out');
@@ -31,6 +36,7 @@ function toggleMenu() {
     menuItems.classList.remove('menu-items-fadeout');
     menu.classList.remove('menu-scale-down');
     name.classList.remove('name-move-back');
+
     menuItemsDisplay();
   }
 }
@@ -96,26 +102,9 @@ workLink.addEventListener('click', workPageRedirect);
 cvLink.addEventListener('click', cvPageRedirect);
 
 function removeEltOnRedirect() {
-  portrait.classList.add('portrait-exit-on-link-click');
-  portrait.classList.remove('portrait-entrance');
-  portrait.classList.remove('portrait-exit');
-  menuItems.classList.remove('menu-items-appear');
-  menuText.textContent = 'Menu';
-  menuText.style.transform = 'rotate(320deg)';
-  menu.classList.remove('menu-scale-up');
-  menuText.textContent = '';
-  menuTextDelay();
-  svg.classList.remove('svg-fade-out');
-  menuItems.classList.add('menu-items-fadeout');
-  menu.classList.add('menu-scale-down');
-  menuText.style.top = '50px';
-  menuText.style.left = '0px';
-  menuText.style.transform = 'rotate(320deg)';
-  name.style.position = 'relative';
+  closeMenu();
   name.classList.remove('name-move-up');
-  // setTimeout(function () {
-  //   window.location.href = url;
-  // }, 1600);
+  name.style.position = 'relative';
 }
 
 function cvPageRedirect() {
