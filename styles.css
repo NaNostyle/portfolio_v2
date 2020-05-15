@@ -427,10 +427,15 @@ h2 {
 
 #work img {
   width: 80vw;
+  border-radius: 10px;
+  border-left: solid rgb(129, 12, 12);
+  border-top: solid rgb(129, 12, 12);
+  border-right: solid 10px rgb(129, 12, 12);
 }
 
 #work {
   text-align: center;
+  background-color: #e9cda7;
 }
 
 .projects {
@@ -443,11 +448,20 @@ h2 {
   position: relative;
   width: 80vw;
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .img-work-overlay {
   position: absolute;
   bottom: 0px;
+  height: 33%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: solid rgb(129, 12, 12);
+  border-left: solid rgb(129, 12, 12);
+  border-right: solid rgb(129, 12, 12);
 }
 
 .allthecolors {
