@@ -113,7 +113,7 @@ function cvPageRedirect() {
 }
 
 function contactPageRedirect() {
-  var contactHref = './contact.html';
+  var contactHref = '#contact';
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = contactHref;
@@ -121,7 +121,7 @@ function contactPageRedirect() {
 }
 
 function homePageRedirect() {
-  var homeLinkHref = './index.html';
+  var homeLinkHref = '#accueil';
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = homeLinkHref;
@@ -129,7 +129,7 @@ function homePageRedirect() {
 }
 
 function workPageRedirect() {
-  var workLinkHref = './work.html';
+  var workLinkHref = '#work';
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = workLinkHref;
