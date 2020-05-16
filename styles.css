@@ -270,6 +270,8 @@ h1 {
   line-height: 1.2;
   font-family: 'Barcelony';
   z-index: 11;
+  margin: 0;
+  padding: 0;
 }
 
 /* .name {
@@ -379,8 +381,14 @@ h1 {
 }
 
 svg {
-  position: absolute;
-  transform: translate(-50%, -25%);
+  position: relative;
+  /* transform: translate(-50%, -25%); */
+  width: 100px;
+  height: 50px;
+}
+
+path {
+  width: 300px;
 }
 
 .svg-fade-out {
@@ -396,17 +404,25 @@ svg {
 }
 
 text {
-  font-size: 2.5rem;
+  font-size: 5rem;
   fill: rgb(223, 223, 223);
   font-family: 'PixelFont';
+  overflow: visible;
+  letter-spacing: 10px;
 }
 
 .content {
-  z-index: 2;
+  z-index: 50;
+  overflow: visible;
+  position: relative;
 }
 
 svg {
   width: 100%;
+  overflow: visible;
+  height: 200px;
+  position: absolute;
+  top: 28%;
 }
 
 a.anchor {
