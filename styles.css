@@ -422,7 +422,7 @@ svg {
   overflow: visible;
   height: 200px;
   position: absolute;
-  top: 28%;
+  transform: translateY(-45px);
 }
 
 a.anchor {
