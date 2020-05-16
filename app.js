@@ -1,3 +1,21 @@
+function onReady(callback) {
+  var intervalId = window.setInterval(function () {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function () {
+  setVisible('.page', true);
+  setVisible('#loading', false);
+});
+
 const menuClick = document.querySelector('.menu-click');
 const menuItems = document.querySelector('.menu-items');
 const menu = document.querySelector('#menu');
@@ -9,6 +27,12 @@ const contactLink = document.querySelector('.contact-link');
 const homeLink = document.querySelector('.home-link');
 const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
+const loading = document.querySelector('#loading');
+
+if (loading === true) {
+  svg.classList.add('name-intro');
+  name.classList.add('name-intro');
+}
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -22,8 +46,6 @@ function closeMenu() {
   menuText.style.top = '50px';
   menuText.style.left = '0px';
   menuText.style.transform = 'rotate(320deg)';
-  svg.classList.add('name-intro');
-  name.classList.add('name-intro');
 }
 
 function toggleMenu() {
@@ -138,21 +160,3 @@ function workPageRedirect() {
     window.location.href = '#work';
   }, 1600);
 }
-
-function onReady(callback) {
-  var intervalId = window.setInterval(function () {
-    if (document.getElementsByTagName('body')[0] !== undefined) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 1000);
-}
-
-function setVisible(selector, visible) {
-  document.querySelector(selector).style.display = visible ? 'block' : 'none';
-}
-
-onReady(function () {
-  setVisible('.page', true);
-  setVisible('#loading', false);
-});
