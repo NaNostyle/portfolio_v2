@@ -29,6 +29,7 @@ function toggleMenu() {
     closeMenu();
     name.style.position = 'relative';
     name.classList.add('name-move-back');
+    svg.classList.add('name-intro');
   } else {
     svg.classList.add('svg-fade-out');
     name.classList.remove('name-intro');
