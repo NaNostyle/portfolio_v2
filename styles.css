@@ -506,4 +506,34 @@ font-family: 'Yatra One', cursive; */
 .card-content {
   background-color: rgba(129, 12, 12, 0.2);
 }
+
+.card p {
+  text-align: left;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 15px;
+}
+
+.card h3 {
+  text-align: left;
+  font-size: 30px;
+}
+
+.card .github-icon {
+  text-align: center;
+  padding: 5px;
+}
+
+.card .btn {
+  margin: 5px;
+}
+
+.github-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-reveal {
+  padding: 22px;
+}
 /* fin cards */
