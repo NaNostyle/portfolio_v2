@@ -32,6 +32,7 @@ function toggleMenu() {
     svg.classList.add('name-intro');
   } else {
     svg.classList.add('svg-fade-out');
+    svg.classList.remove('name-intro');
     name.classList.remove('name-intro');
     menu.classList.add('menu-scale-up');
     menuItems.classList.remove('menu-items-fadeout');
