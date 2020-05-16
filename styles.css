@@ -529,11 +529,13 @@ font-family: 'Yatra One', cursive; */
 
 .github-and-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
+  margin-top: 5px;
 }
 
 .card .card-reveal {
   padding: 22px;
+  overflow: hidden;
 }
 /* fin cards */
