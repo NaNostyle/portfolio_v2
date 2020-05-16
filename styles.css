@@ -527,11 +527,14 @@ font-family: 'Yatra One', cursive; */
   margin: 5px;
 }
 
-.github-and-button {
+.card-button {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   margin-top: 5px;
+}
+.card-button .btn {
+  margin-left: 0px;
 }
 
 .card .card-reveal {
