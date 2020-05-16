@@ -22,6 +22,8 @@ function closeMenu() {
   menuText.style.top = '50px';
   menuText.style.left = '0px';
   menuText.style.transform = 'rotate(320deg)';
+  svg.classList.add('name-intro');
+  name.classList.add('name-intro');
 }
 
 function toggleMenu() {
