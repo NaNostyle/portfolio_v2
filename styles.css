@@ -121,6 +121,7 @@ font-family: 'Yatra One', cursive; */
 .menu-items a {
   color: white;
   background-color: rgb(129, 12, 12);
+  letter-spacing: 5px;
 }
 
 /* Menu item appearing */
