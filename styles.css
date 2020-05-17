@@ -23,14 +23,12 @@
 .menu-scale-up {
   position: relative;
   border-radius: 50%;
-  background-color: blue;
   animation: scaleup 2s;
 }
 
 .menu-scale-down {
   position: relative;
   border-radius: 50%;
-  background-color: blue;
   animation: scaledown 2s;
 }
 
@@ -273,12 +271,6 @@ h1 {
   padding: 0;
 }
 
-/* .name {
-  position: absolute;
-  top: 10px;
-
-} */
-
 .name-move-up {
   animation: name-move-up 2s forwards;
 }
@@ -427,10 +419,13 @@ h2 {
   background-color: white;
   padding: 10px;
   border-radius: 4px;
-  border: solid #2bbbad;
-  color: #2bbbad;
+  /* border: solid #2bbbad; */
+  text-shadow: 1px 1px 2px grey;
+  /* color:#2bbbad; */
+  color: #e9cda7;
   display: inline-block;
   font-size: 30px;
+  border: dotted 1px;
 }
 
 #work {
