@@ -10,6 +10,8 @@ const homeLink = document.querySelector('.home-link');
 const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
 const loading = document.querySelector('#loading');
+const card = document.querySelector('.card');
+const test = document.querySelector('.test');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -139,3 +141,84 @@ function workPageRedirect() {
     window.location.href = '#work';
   }, 1600);
 }
+
+// var cards = document.querySelectorAll('.card');
+// var cardsArray = Array.from(cards);
+
+// for (var i = 0; i < cardsArray.length; i++) {
+//   var allCards = cardsArray[i];
+//   console.log(cardsArray[i].clientHeight);
+
+//   var derniere_position_de_scroll_connue = 0;
+//   var ticking = false;
+//   position_scroll = window.scroll;
+
+//   function faireQuelqueChose(position_scroll) {
+//     if (position_scroll > 1000) {
+//       test.style.display = 'none';
+//     } else {
+//       test.style.display = 'block';
+//     }
+//   }
+// }
+
+// window.addEventListener('scroll', function (e) {
+//   derniere_position_de_scroll_connue = window.scrollY;
+
+//   if (!ticking) {
+//     window.requestAnimationFrame(function () {
+//       faireQuelqueChose(derniere_position_de_scroll_connue);
+//       ticking = false;
+//     });
+//   }
+
+//   ticking = true;
+// });
+
+// faireQuelqueChose(window.scroll(0, 1200));
+
+// $(window).scroll(function () {
+//   var hT = $('#scroll-to').offset().top,
+//     hH = $('#scroll-to').outerHeight(),
+//     wH = $(window).height(),
+//     wS = $(this).scrollTop();
+//   if (wS > hT + hH - wH && hT > wS && wS + wH > hT + hH) {
+//     console.log('test');
+//   }
+// });
+
+// for (var i = 0; i < cardsArray.length; i++) {
+//   console.log(cardsArray[i].offsetTop);
+//   offsetsTop.push(cardsArray[i].offsetTop);
+//   clientsHeight.push(cardsArray[i].clientHeight);
+
+//   window.addEventListener('scroll', function (e) {
+//     var hT = test.offsetTop;
+//     var hH = test.clientHeight;
+//     var wH = window.outerHeight;
+//     var wS = window.scrollY;
+//     if (wS > hT + hH - wH && hT > wS && wS + wH > hT + hH) {
+//       console.log('test');
+//     }
+//   });
+// }
+var cards = document.querySelectorAll('.card');
+var cardsArray = Array.from(cards);
+
+window.addEventListener('scroll', function (e) {
+  for (var i = 0; i < cardsArray.length; i++) {
+    var wH = window.outerHeight;
+    var wS = window.scrollY;
+    if (
+      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight - wH &&
+      cardsArray[i].offsetTop >= wS &&
+      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight
+    ) {
+      cardsArray[i].classList.add('card-entrance');
+      cardsArray[i].classList.remove('card-exit');
+    } else {
+      cardsArray[i].classList.remove('card-entrance');
+      cardsArray[i].classList.add('card-exit');
+    }
+  }
+});
