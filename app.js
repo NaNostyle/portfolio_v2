@@ -210,9 +210,9 @@ window.addEventListener('scroll', function (e) {
     var wH = window.outerHeight;
     var wS = window.scrollY;
     if (
-      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight - wH &&
+      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
       cardsArray[i].offsetTop >= wS &&
-      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight
+      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
     ) {
       cardsArray[i].classList.add('card-entrance');
       cardsArray[i].classList.remove('card-exit');
