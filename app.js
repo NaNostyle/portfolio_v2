@@ -11,11 +11,6 @@ const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
 const loading = document.querySelector('#loading');
 
-if (loading === true) {
-  svg.classList.add('name-intro');
-  name.classList.add('name-intro');
-}
-
 menuClick.addEventListener('click', toggleMenu);
 
 function closeMenu() {
@@ -113,6 +108,8 @@ function removeEltOnRedirect() {
   closeMenu();
   name.classList.remove('name-move-up');
   name.style.position = 'relative';
+  name.classList.add('name-move-back');
+  svg.classList.add('name-intro');
 }
 
 function cvPageRedirect() {
