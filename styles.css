@@ -373,7 +373,6 @@ h1 {
 
 svg {
   position: relative;
-  /* transform: translate(-50%, -25%); */
   width: 100px;
   height: 50px;
 }
@@ -520,15 +519,10 @@ font-family: 'Yatra One', cursive; */
   color: white;
 }
 
-.card p {
-  text-align: left;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 15px;
-}
-
 .card h3 {
   text-align: left;
   font-size: 30px;
+  color: #2bbbad;
 }
 
 .card .github-icon {
@@ -553,10 +547,19 @@ font-family: 'Yatra One', cursive; */
 .card .card-reveal {
   padding: 22px;
 }
-/* fin cards */
 
-.test {
-  width: 50px;
-  height: 50px;
-  background-color: red;
+div.card-reveal p {
+  text-align: left;
+  font-family: 'Yatra One', cursive;
+
+  font-size: 15px;
 }
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Varela', sans-serif;
+font-family: 'Yatra One', cursive; */
+/* fin cards */
