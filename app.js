@@ -143,7 +143,7 @@ const cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 
 window.addEventListener('scroll', function (e) {
-  if (window.scrollY >= window.outerHeight / 2) {
+  if (window.scrollY >= window.outerHeight / 1.5) {
     name.style.color = 'white';
     portrait.style.border = 'solid white 3px';
   } else {
