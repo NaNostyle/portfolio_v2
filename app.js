@@ -203,11 +203,11 @@ var cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 
 window.addEventListener('scroll', function (e) {
-  // if (window.scrollY >= window.outerHeight) {
-  //   name.style.backgroundColor = 'rgba(74, 74, 86, 0.8)';
-  // } else {
-  //   name.style.backgroundColor = 'transparent';
-  // }
+  if (window.scrollY >= window.outerHeight) {
+    name.style.color = 'white';
+  } else {
+    name.style.color = '#e9cda7';
+  }
   for (var i = 0; i < cardsArray.length; i++) {
     var wH = window.outerHeight;
     var wS = window.scrollY;
