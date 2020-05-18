@@ -145,8 +145,10 @@ var cardsArray = Array.from(cards);
 window.addEventListener('scroll', function (e) {
   if (window.scrollY >= window.outerHeight) {
     name.style.color = 'white';
+    portrait.style.border = 'solid white 3px';
   } else {
     name.style.color = '#e9cda7';
+    portrait.style.border = 'solid #e9cda7 3px';
   }
   for (var i = 0; i < cardsArray.length; i++) {
     var wH = window.outerHeight;
