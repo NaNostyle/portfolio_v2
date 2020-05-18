@@ -9,9 +9,7 @@ const contactLink = document.querySelector('.contact-link');
 const homeLink = document.querySelector('.home-link');
 const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
-const loading = document.querySelector('#loading');
 const card = document.querySelector('.card');
-const test = document.querySelector('.test');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -41,7 +39,6 @@ function toggleMenu() {
     menuItems.classList.remove('menu-items-fadeout');
     menu.classList.remove('menu-scale-down');
     name.classList.remove('name-move-back');
-
     menuItemsDisplay();
   }
 }
@@ -206,6 +203,11 @@ var cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 
 window.addEventListener('scroll', function (e) {
+  // if (window.scrollY >= window.outerHeight) {
+  //   name.style.backgroundColor = 'rgba(74, 74, 86, 0.8)';
+  // } else {
+  //   name.style.backgroundColor = 'transparent';
+  // }
   for (var i = 0; i < cardsArray.length; i++) {
     var wH = window.outerHeight;
     var wS = window.scrollY;
