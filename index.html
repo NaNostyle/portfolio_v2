@@ -62,9 +62,9 @@
       <li><a class="home-link">Accueil</a></li>
       <li><a class="work-link">Travaux</a></li>
       <li><a class="cv-link">CV</a></li>
-      <li><a class="contact-link">Hire me !</a></li>
+      <li><a class="contact-link">Me contacter</a></li>
     </ul>
-      </div>
+
     <section id="work">
       <h2>Quelques travaux</h2>
       <div class="card">
@@ -75,7 +75,6 @@
           <span class="card-title activator"
             >Agence Web<i class="material-icons right">more_vert</i></span
           >
-          
         </div>
         <div class="card-reveal">
           <span class="card-title"
@@ -98,7 +97,7 @@
           </div>
         </div>
       </div>
-     
+
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="./img/projet2.png" />
@@ -138,7 +137,9 @@
         </div>
         <div class="card-content">
           <span class="card-title activator"
-            >Carte d'anniversaire<i class="material-icons right">more_vert</i></span
+            >Carte d'anniversaire<i class="material-icons right"
+              >more_vert</i
+            ></span
           >
           <p><a href="#"></a></p>
         </div>
@@ -149,8 +150,13 @@
           <h3>Carte d'anniversaire dynamique</h3>
 
           <p>
-            J'ai développé cette page web afin de célébrer un anniversaire. Le but du développement de cette carte était de me familiariser avec jQuery. J'ai donc utilisé ce framework afin de rendre la page dynamique avec notamment des évênements qui se déclenchent lorsqu'une action est entreprise par l'utilisateur sur la page.
-            A la fin de l'animation, un morceau de musique est joué et des contrôles sont disponibles afin de le mettre sur pause ou de le rejouer.
+            J'ai développé cette page web afin de célébrer un anniversaire. Le
+            but du développement de cette carte était de me familiariser avec
+            jQuery. J'ai donc utilisé ce framework afin de rendre la page
+            dynamique avec notamment des évênements qui se déclenchent
+            lorsqu'une action est entreprise par l'utilisateur sur la page. A la
+            fin de l'animation, un morceau de musique est joué et des contrôles
+            sont disponibles afin de le mettre sur pause ou de le rejouer.
           </p>
           <div class="card-button">
             <a
@@ -162,8 +168,36 @@
           </div>
         </div>
       </div>
-      
-      
+    </section>
+    <section id="contact">
+      <h2>Laissez-moi un message</h2>
+
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input id="icon_prefix1" type="email" class="validate" />
+          <label for="icon_prefix1">Email</label>
+          <span
+            class="helper-text"
+            data-error="Invalide"
+            data-success="Valide"
+          ></span>
+        </div>
+
+        <div class="input-field">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Message</label>
+        </div>
+        <button
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >
+          Envoyer
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
     </section>
     <a class="anchor" id="top"></a>
 

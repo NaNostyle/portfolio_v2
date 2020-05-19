@@ -143,6 +143,9 @@ const cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 
 window.addEventListener('scroll', function (e) {
+  var wH = window.outerHeight;
+  var wS = window.scrollY;
+
   if (window.scrollY >= window.outerHeight / 1.5) {
     name.style.color = 'white';
     portrait.style.border = 'solid white 3px';
@@ -151,8 +154,6 @@ window.addEventListener('scroll', function (e) {
     portrait.style.border = 'solid #e9cda7 3px';
   }
   for (var i = 0; i < cardsArray.length; i++) {
-    var wH = window.outerHeight;
-    var wS = window.scrollY;
     if (
       wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
       cardsArray[i].offsetTop >= wS &&

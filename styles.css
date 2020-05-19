@@ -550,7 +550,6 @@ font-family: 'Yatra One', cursive; */
 div.card-reveal p {
   text-align: left;
   font-family: 'Yatra One', cursive;
-
   font-size: 15px;
 }
 /*
@@ -562,3 +561,11 @@ font-family: 'Ubuntu Mono', monospace;
 font-family: 'Varela', sans-serif;
 font-family: 'Yatra One', cursive; */
 /* fin cards */
+
+#contact {
+  height: 100vh;
+}
+
+form {
+  width: 80vw;
+}
