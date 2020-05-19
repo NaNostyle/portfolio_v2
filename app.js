@@ -155,9 +155,9 @@ window.addEventListener('scroll', function (e) {
   }
   for (var i = 0; i < cardsArray.length; i++) {
     if (
-      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
+      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 3 - wH &&
       cardsArray[i].offsetTop >= wS &&
-      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
+      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 3
     ) {
       cardsArray[i].classList.add('card-entrance');
       cardsArray[i].classList.remove('card-exit');
