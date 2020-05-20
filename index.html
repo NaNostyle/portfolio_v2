@@ -1,18 +1,14 @@
-<!-- <?php 
+<?php 
 if(isset($_POST['submit'])){
-    $to = "larrieu.arnaud@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
+    $to = "larrieu.arnaud@gmail.com";
+    $from = $_POST['email']; 
     $subject = "Form submission";
-    $message = $from . " wrote the following:" . "\n\n" . $_POST['message'];
-
+    $message = $from . " a écrit le message suivant : " . "\n\n" . $_POST['message'];
     $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you, we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    echo "Mail sent";
     }
-    ?> -->
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
