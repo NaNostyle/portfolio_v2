@@ -128,7 +128,7 @@ function contactPageRedirect() {
 function homePageRedirect() {
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = '#accueil';
+    window.location.href = '#home';
   }, 1600);
 }
 

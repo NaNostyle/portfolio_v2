@@ -15,9 +15,6 @@ if(isset($_POST['submit'])){
     }
     ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,6 +41,7 @@ if(isset($_POST['submit'])){
     <title>Menu</title>
   </head>
   <body>
+    <a class="anchor" id="home"></a>
     <div class="menu-click menu-btn" id="menu">
       <div class="menu-text">Menu</div>
     </div>
@@ -189,11 +187,9 @@ if(isset($_POST['submit'])){
         </div>
       </div>
     </section>
+
     <section id="contact">
       <h2>Laissez-moi un message</h2>
-
-
-
 
       <form action="" method="post">
         <div class="input-field">
@@ -209,7 +205,11 @@ if(isset($_POST['submit'])){
 
         <div class="input-field">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
+          <textarea
+            id="icon_prefix2"
+            class="materialize-textarea"
+            name="message"
+          ></textarea>
           <label for="icon_prefix2">Message</label>
         </div>
         <button
@@ -223,8 +223,7 @@ if(isset($_POST['submit'])){
         </button>
       </form>
     </section>
-    <a class="anchor" id="top"></a>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./app.js"></script>
   </body>
