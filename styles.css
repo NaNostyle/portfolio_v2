@@ -570,3 +570,117 @@ font-family: 'Yatra One', cursive; */
 form {
   width: 80vw;
 }
+
+#cv p {
+  color: white;
+  font-weight: 600;
+}
+
+#cv {
+  background: #e9cda7;
+  height: 100vh;
+  display: flex;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.3);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 150px;
+}
+
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #2bbbad;
+  height: 10px;
+}
+.load-html {
+  animation: load-html 3s normal forwards;
+}
+.load-css {
+  animation: load-css 3s normal forwards;
+}
+.load-javascript {
+  animation: load-javascript 3s normal forwards;
+}
+.load-boostrap {
+  animation: load-bootstrap 3s normal forwards;
+}
+.load-reactjs {
+  animation: load-reactjs 3s normal forwards;
+}
+.load-php {
+  animation: load-php 3s normal forwards;
+}
+.load-vscode {
+  animation: load-vscode 3s normal forwards;
+}
+
+@keyframes load-html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes load-css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes load-javascript {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 72%;
+  }
+}
+
+@keyframes load-bootstrap {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes load-reactjs {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 33%;
+  }
+}
+
+@keyframes load-php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 33%;
+  }
+}
+
+@keyframes load-vscode {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}

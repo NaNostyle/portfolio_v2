@@ -3,7 +3,6 @@ if(isset($_POST['submit'])){
     $to = "larrieu.arnaud@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
     $message = $from . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
@@ -187,7 +186,47 @@ if(isset($_POST['submit'])){
         </div>
       </div>
     </section>
-
+    <section id="cv">
+      <div class="hard-skills">
+        <h2>Hard skills</h2>
+        <p>HTML</p>
+        <div class="progress">
+          <div class="progress-value load-html"></div>
+        </div>
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-value load-css"></div>
+        </div>
+        <p>JavaScript</p>
+        <div class="progress">
+          <div class="progress-value load-javascript"></div>
+        </div>
+        <p>Bootstrap</p>
+        <div class="progress">
+          <div class="progress-value load-boostrap"></div>
+        </div>
+        <p>ReactJs</p>
+        <div class="progress">
+          <div class="progress-value load-reactjs"></div>
+        </div>
+        <p>PHP</p>
+        <div class="progress">
+          <div class="progress-value load-php"></div>
+        </div>
+        <p>Vscode</p>
+        <div class="progress">
+          <div class="progress-value load-vscode"></div>
+        </div>
+      </div>
+      <div class="soft-skills">
+        <h2>Soft skills</h2>
+        <p>Travail en équipe</p>
+        <p>Adaptation</p>
+        <p>Résolution de problèmes</p>
+        <p>Créativité</p>
+        <p>Autonomie</p>
+      </div>
+    </section>
     <section id="contact">
       <h2>Laissez-moi un message</h2>
 
