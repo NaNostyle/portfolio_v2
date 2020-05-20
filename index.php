@@ -1,3 +1,23 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "larrieu.arnaud@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $from . " wrote the following:" . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you, we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+    ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -172,10 +192,13 @@
     <section id="contact">
       <h2>Laissez-moi un message</h2>
 
-      <form>
+
+
+
+      <form action="" method="post">
         <div class="input-field">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix1" type="email" class="validate" />
+          <input id="icon_prefix1" type="email" name="email" class="validate" />
           <label for="icon_prefix1">Email</label>
           <span
             class="helper-text"
@@ -186,13 +209,14 @@
 
         <div class="input-field">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
           <label for="icon_prefix2">Message</label>
         </div>
         <button
           class="btn waves-effect waves-light"
           type="submit"
-          name="action"
+          name="submit"
+          value="Submit"
         >
           Envoyer
           <i class="material-icons right">send</i>
@@ -200,7 +224,7 @@
       </form>
     </section>
     <a class="anchor" id="top"></a>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./app.js"></script>
   </body>
