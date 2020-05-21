@@ -170,7 +170,6 @@ window.addEventListener('scroll', function (e) {
     }
   }
   for (var j = 0; j < progressBarArray.length; j++) {
-    // for (var k = 1; k <= progressBarArray.length; k++) {
     if (
       wS >= cv.offsetTop - cv.clientHeight / 2 &&
       wS <= cv.offsetTop + cv.clientHeight / 2
@@ -182,5 +181,4 @@ window.addEventListener('scroll', function (e) {
       console.log('remove');
     }
   }
-  // }
 });
