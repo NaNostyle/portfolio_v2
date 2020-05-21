@@ -722,6 +722,10 @@ form {
   width: 45vw;
 }
 
+.soft-skills p {
+  color: #2bbbad;
+}
+
 h2 {
   text-decoration: underline;
 }
