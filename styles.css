@@ -600,29 +600,29 @@ form {
   background: #2bbbad;
   height: 10px;
 }
-.load-html {
-  animation: load-html 3s normal forwards;
+.load1 {
+  animation: load1 3s normal forwards;
 }
-.load-css {
-  animation: load-css 3s normal forwards;
+.load2 {
+  animation: load2 3s normal forwards;
 }
-.load-javascript {
-  animation: load-javascript 3s normal forwards;
+.load3 {
+  animation: load3 3s normal forwards;
 }
-.load-boostrap {
-  animation: load-bootstrap 3s normal forwards;
+.load4 {
+  animation: load4 3s normal forwards;
 }
-.load-reactjs {
-  animation: load-reactjs 3s normal forwards;
+.load5 {
+  animation: load5 3s normal forwards;
 }
-.load-php {
-  animation: load-php 3s normal forwards;
+.load6 {
+  animation: load6 3s normal forwards;
 }
-.load-vscode {
-  animation: load-vscode 3s normal forwards;
+.load7 {
+  animation: load7 3s normal forwards;
 }
 
-@keyframes load-html {
+@keyframes load1 {
   0% {
     width: 0;
   }
@@ -631,7 +631,7 @@ form {
   }
 }
 
-@keyframes load-css {
+@keyframes load2 {
   0% {
     width: 0;
   }
@@ -640,7 +640,7 @@ form {
   }
 }
 
-@keyframes load-javascript {
+@keyframes load3 {
   0% {
     width: 0;
   }
@@ -649,7 +649,7 @@ form {
   }
 }
 
-@keyframes load-bootstrap {
+@keyframes load4 {
   0% {
     width: 0;
   }
@@ -658,7 +658,7 @@ form {
   }
 }
 
-@keyframes load-reactjs {
+@keyframes load5 {
   0% {
     width: 0;
   }
@@ -667,7 +667,7 @@ form {
   }
 }
 
-@keyframes load-php {
+@keyframes load6 {
   0% {
     width: 0;
   }
@@ -676,7 +676,7 @@ form {
   }
 }
 
-@keyframes load-vscode {
+@keyframes load7 {
   0% {
     width: 0;
   }

@@ -10,6 +10,8 @@ const homeLink = document.querySelector('.home-link');
 const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
 const card = document.querySelector('.card');
+const progressBar = document.querySelectorAll('.bar');
+const cvSection = document.querySelector('#cv');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -141,6 +143,7 @@ function workPageRedirect() {
 
 const cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
+var progressBarArray = Array.from(progressBar);
 
 window.addEventListener('scroll', function (e) {
   var wH = window.outerHeight;
@@ -155,9 +158,9 @@ window.addEventListener('scroll', function (e) {
   }
   for (var i = 0; i < cardsArray.length; i++) {
     if (
-      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 3 - wH &&
+      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
       cardsArray[i].offsetTop >= wS &&
-      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 3
+      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
     ) {
       cardsArray[i].classList.add('card-entrance');
       cardsArray[i].classList.remove('card-exit');
@@ -166,4 +169,18 @@ window.addEventListener('scroll', function (e) {
       cardsArray[i].classList.add('card-exit');
     }
   }
+  for (var j = 0; j < progressBarArray.length; j++) {
+    // for (var k = 1; k <= progressBarArray.length; k++) {
+    if (
+      wS >= cv.offsetTop - cv.clientHeight / 2 &&
+      wS <= cv.offsetTop + cv.clientHeight / 2
+    ) {
+      progressBar[j].classList.add('load' + [j + 1]);
+      console.log('add');
+    } else {
+      progressBar[j].classList.remove('load' + [j + 1]);
+      console.log('remove');
+    }
+  }
+  // }
 });

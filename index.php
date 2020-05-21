@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
 if(isset($_POST['submit'])){
     $to = "larrieu.arnaud@gmail.com";
     $from = $_POST['email']; 
@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     echo "Mail sent";
     }
-    ?> -->
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -187,31 +187,31 @@ if(isset($_POST['submit'])){
         <h2>Hard skills</h2>
         <p>HTML</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-html"></div>
         </div>
         <p>CSS</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-css"></div>
         </div>
         <p>JavaScript</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-javascript"></div>
         </div>
         <p>Bootstrap</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-boostrap"></div>
         </div>
         <p>ReactJs</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-reactjs"></div>
         </div>
         <p>PHP</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-php"></div>
         </div>
         <p>Vscode</p>
         <div class="progress">
-          <div class="progress-value bar"></div>
+          <div class="progress-value load-vscode"></div>
         </div>
       </div>
       <div class="soft-skills">
