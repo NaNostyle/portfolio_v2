@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #e9cda7;
+}
+
 @font-face {
   font-family: 'Barcelony';
   src: url('./fonts/Barcelony.ttf') format('truetype');
@@ -571,15 +575,25 @@ form {
   width: 80vw;
 }
 
-#cv p {
-  color: white;
-  font-weight: 600;
-}
-
 #cv {
   background: #e9cda7;
   height: 100vh;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+.skills {
   display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.skills .btn {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 .progress {
@@ -591,7 +605,7 @@ form {
   padding: 0 5px;
   display: flex;
   height: 20px;
-  width: 150px;
+  width: 45vw;
 }
 
 .progress-value {
@@ -683,4 +697,31 @@ form {
   100% {
     width: 90%;
   }
+}
+
+.soft-skills p {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(129, 12, 12);
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 3px;
+  font-weight: 600;
+}
+
+.hard-skills {
+  width: 45vw;
+}
+
+.hard-skills p {
+  color: rgb(129, 12, 12);
+  font-weight: 600;
+}
+
+.soft-skills {
+  width: 45vw;
+}
+
+h2 {
+  text-decoration: underline;
 }

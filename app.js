@@ -156,6 +156,7 @@ window.addEventListener('scroll', function (e) {
     name.style.color = '#e9cda7';
     portrait.style.border = 'solid #e9cda7 3px';
   }
+
   for (var i = 0; i < cardsArray.length; i++) {
     if (
       wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
@@ -175,10 +176,8 @@ window.addEventListener('scroll', function (e) {
       wS <= cv.offsetTop + cv.clientHeight / 2
     ) {
       progressBar[j].classList.add('load' + [j + 1]);
-      console.log('add');
     } else {
       progressBar[j].classList.remove('load' + [j + 1]);
-      console.log('remove');
     }
   }
 });
