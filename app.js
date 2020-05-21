@@ -145,7 +145,7 @@ const cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 var progressBarArray = Array.from(progressBar);
 
-window.addEventListener('scroll', function (e) {
+window.addEventListener('scroll', function () {
   var wH = window.outerHeight;
   var wS = window.scrollY;
 
@@ -159,9 +159,11 @@ window.addEventListener('scroll', function (e) {
 
   for (var i = 0; i < cardsArray.length; i++) {
     if (
-      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
-      cardsArray[i].offsetTop >= wS &&
-      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
+      // wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
+      // cardsArray[i].offsetTop >= wS &&
+      // wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
+      wS >= cardsArray[i].offsetTop - cardsArray[i].clientHeight / 1.2 &&
+      wS <= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 1.2
     ) {
       cardsArray[i].classList.add('card-entrance');
       cardsArray[i].classList.remove('card-exit');
