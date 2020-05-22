@@ -125,7 +125,7 @@ function cvPageRedirect() {
     workSection.style.display = 'none';
 
     window.location.href = '#cv';
-  }, 1800);
+  }, 1600);
 }
 
 function contactPageRedirect() {

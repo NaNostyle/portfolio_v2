@@ -424,13 +424,6 @@ svg {
   transform: translateY(-20px);
 }
 
-a.anchor {
-  display: block;
-  position: relative;
-  top: 0px;
-  visibility: hidden;
-}
-
 /* section projet */
 
 h2 {
