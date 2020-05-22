@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
     <ul class="menu-items menu-items-appear">
       <li><a class="home-link">Accueil</a></li>
       <li><a class="work-link">Travaux</a></li>
-      <li><a class="cv-link">CV</a></li>
+      <li><a class="cv-link">Skills & CV</a></li>
       <li><a class="contact-link">Me contacter</a></li>
     </ul>
 
@@ -186,33 +186,47 @@ if(isset($_POST['submit'])){
       <div class="skills">
         <div class="hard-skills">
           <h2>Hard skills</h2>
-          <p>HTML</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
-          <p>CSS</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
-          <p>JavaScript</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>JavaScript</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
-          <p>Bootstrap</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>Bootstrap</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
-          <p>ReactJs</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>ReactJs</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
-          <p>PHP</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>PHP</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
-          <p>Vscode</p>
-          <div class="progress">
-            <div class="progress-value bar"></div>
+          <div class="bar-container">
+            <p>Vscode</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
           </div>
         </div>
 
@@ -220,6 +234,9 @@ if(isset($_POST['submit'])){
           <h2>
             Soft skills
           </h2>
+          <a class="waves-effect waves-light btn"
+            ><i class="material-icons left">file_download</i>Mon CV</a
+          >
           <p>Travail en équipe</p>
           <p>Adaptation</p>
           <p>
@@ -227,9 +244,6 @@ if(isset($_POST['submit'])){
           </p>
           <p>Créativité</p>
           <p>Autonomie</p>
-          <a class="waves-effect waves-light btn"
-            ><i class="material-icons left">file_download</i>Mon CV</a
-          >
         </div>
       </div>
     </section>

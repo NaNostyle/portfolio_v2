@@ -583,25 +583,6 @@ form {
   width: 80vw;
 }
 
-#cv {
-  background: #e9cda7;
-  height: 100vh;
-  width: 90vw;
-  margin: auto;
-  text-align: center;
-  font-family: 'Tusj';
-}
-
-.skills {
-  display: flex;
-}
-
-.soft-skills .btn {
-  width: 140px;
-  /* top: 40px; */
-  font-family: 'Abril Fatface', cursive;
-}
-
 .progress {
   background: rgba(255, 255, 255, 0.3);
   justify-content: flex-start;
@@ -704,6 +685,35 @@ form {
     width: 90%;
   }
 }
+#cv {
+  background: #e9cda7;
+  height: 100vh;
+  width: 95vw;
+  margin: auto;
+  text-align: center;
+  font-family: 'Tusj';
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.hard-skills {
+  align-items: center;
+  align-self: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.soft-skills {
+  align-items: center;
+  align-self: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .soft-skills p {
   background-color: rgba(255, 255, 255, 0.5);
@@ -712,10 +722,7 @@ form {
   margin: 10px 10px 10px 10px;
   padding: 3px;
   font-weight: 600;
-}
-
-.hard-skills {
-  width: 45vw;
+  color: #2bbbad;
 }
 
 .hard-skills p {
@@ -724,19 +731,12 @@ form {
   font-size: 18px;
 }
 
-.soft-skills {
-  width: 45vw;
-  align-items: center;
-  align-self: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.soft-skills p {
-  color: #2bbbad;
+.soft-skills .btn {
+  width: 140px;
+  /* top: 40px; */
+  font-family: 'Abril Fatface', cursive;
 }
 
 h2 {
   font-family: 'Yatra One', cursive;
-  top: 0;
 }
