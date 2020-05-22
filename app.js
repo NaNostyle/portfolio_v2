@@ -183,3 +183,14 @@ window.addEventListener('scroll', function () {
     }
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel');
+  var options = {
+    fullWidth: false,
+    indicators: true,
+    numVisible: 4,
+    duration: 100,
+  };
+  var instances = M.Carousel.init(elems, options);
+});
