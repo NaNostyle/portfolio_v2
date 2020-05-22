@@ -11,8 +11,10 @@ const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
 const card = document.querySelector('.card');
 const progressBar = document.querySelectorAll('.bar');
-const cvSection = document.querySelector('#cv');
 const softSkillsPara = document.querySelectorAll('.soft-skills p');
+const workSection = document.querySelector('#work');
+const cvSection = document.querySelector('#cv');
+const contactSection = document.querySelector('#contact');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -115,6 +117,9 @@ function removeEltOnRedirect() {
 }
 
 function cvPageRedirect() {
+  contactSection.style.display = 'none';
+  workSection.style.display = 'none';
+  cvSection.style.display = 'block';
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = '#cv';
@@ -122,6 +127,9 @@ function cvPageRedirect() {
 }
 
 function contactPageRedirect() {
+  cvSection.style.display = 'none';
+  workSection.style.display = 'none';
+  contactSection.style.display = 'block';
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = '#contact';
@@ -136,6 +144,9 @@ function homePageRedirect() {
 }
 
 function workPageRedirect() {
+  cvSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  workSection.style.display = 'block';
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = '#work';
