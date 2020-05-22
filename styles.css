@@ -693,7 +693,7 @@ form {
 
 #cv {
   background: #e9cda7;
-  height: 110vh;
+  height: 100vh;
   width: 95vw;
   margin: auto;
   text-align: center;
@@ -703,7 +703,7 @@ form {
 .skills {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hard-skills {
