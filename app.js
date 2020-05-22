@@ -16,13 +16,6 @@ const workSection = document.querySelector('#work');
 const cvSection = document.querySelector('#cv');
 const contactSection = document.querySelector('#contact');
 
-window.addEventListener('load', function () {
-  setTimeout(function () {
-    // This hides the address bar:
-    window.scrollTo(0, 1);
-  }, 0);
-});
-
 menuClick.addEventListener('click', toggleMenu);
 
 function closeMenu() {
@@ -196,37 +189,58 @@ window.addEventListener('scroll', function () {
       cardsArray[i].classList.add('card-exit');
     }
   }
-  for (var j = 0; j < progressBarArray.length; j++) {
-    if (
-      (wS >= cv.offsetTop - cv.clientHeight / 2 &&
-        wS <= cv.offsetTop + cv.clientHeight / 2) ||
-      wH === wS
-    ) {
+  if (
+    (wS >= cv.offsetTop - cv.clientHeight / 2 &&
+      wS <= cv.offsetTop + cv.clientHeight / 2) ||
+    wH === wS
+  ) {
+    for (var j = 0; j < progressBarArray.length; j++) {
       progressBar[j].classList.add('load' + [j + 1]);
-    } else {
+    }
+    for (var l = 0; l < softSkillParaArray.length; l++) {
+      softSkillParaArray[l].classList.add('soft-skills-p-anim');
+    }
+  } else {
+    for (var j = 0; j < progressBarArray.length; j++) {
       progressBar[j].classList.remove('load' + [j + 1]);
     }
-  }
-  for (var l = 0; l < softSkillParaArray.length; l++) {
-    if (
-      (wS >= cv.offsetTop - cv.clientHeight / 2 &&
-        wS <= cv.offsetTop + cv.clientHeight / 2) ||
-      wH === wS
-    ) {
-      softSkillParaArray[l].classList.add('soft-skills-p-anim');
-    } else {
+    for (var l = 0; l < softSkillParaArray.length; l++) {
       softSkillParaArray[l].classList.remove('soft-skills-p-anim');
     }
   }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.carousel');
-  var options = {
-    fullWidth: false,
-    indicators: true,
-    numVisible: 4,
-    duration: 100,
-  };
-  var instances = M.Carousel.init(elems, options);
-});
+//   for (var j = 0; j < progressBarArray.length; j++) {
+//     if (
+//       (wS >= cv.offsetTop - cv.clientHeight / 2 &&
+//         wS <= cv.offsetTop + cv.clientHeight / 2) ||
+//       wH === wS
+//     ) {
+//       progressBar[j].classList.add('load' + [j + 1]);
+//     } else {
+//       progressBar[j].classList.remove('load' + [j + 1]);
+//     }
+//   }
+//   for (var l = 0; l < softSkillParaArray.length; l++) {
+//     if (
+//       (wS >= cv.offsetTop - cv.clientHeight / 2 &&
+//         wS <= cv.offsetTop + cv.clientHeight / 2) ||
+//       wH === wS
+//     ) {
+//       softSkillParaArray[l].classList.add('soft-skills-p-anim');
+//     } else {
+//       softSkillParaArray[l].classList.remove('soft-skills-p-anim');
+//     }
+//   }
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   var elems = document.querySelectorAll('.carousel');
+//   var options = {
+//     fullWidth: false,
+//     indicators: true,
+//     numVisible: 4,
+//     duration: 100,
+//   };
+//   var instances = M.Carousel.init(elems, options);
+// });
