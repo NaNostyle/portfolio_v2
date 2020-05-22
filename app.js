@@ -12,6 +12,7 @@ const workLink = document.querySelector('.work-link');
 const card = document.querySelector('.card');
 const progressBar = document.querySelectorAll('.bar');
 const cvSection = document.querySelector('#cv');
+const softSkillsPara = document.querySelectorAll('.soft-skills p');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -144,6 +145,7 @@ function workPageRedirect() {
 const cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 var progressBarArray = Array.from(progressBar);
+softSkillParaArray = Array.from(softSkillsPara);
 
 window.addEventListener('scroll', function () {
   var wH = window.outerHeight;
@@ -180,6 +182,16 @@ window.addEventListener('scroll', function () {
       progressBar[j].classList.add('load' + [j + 1]);
     } else {
       progressBar[j].classList.remove('load' + [j + 1]);
+    }
+  }
+  for (var l = 0; l < softSkillParaArray.length; l++) {
+    if (
+      wS >= cv.offsetTop - cv.clientHeight / 2 &&
+      wS <= cv.offsetTop + cv.clientHeight / 2
+    ) {
+      softSkillParaArray[l].classList.add('soft-skills-p-anim');
+    } else {
+      softSkillParaArray[l].classList.remove('soft-skills-p-anim');
     }
   }
 });

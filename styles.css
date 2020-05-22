@@ -726,6 +726,20 @@ form {
   font-weight: 600;
   color: #2bbbad;
   font-family: 'Yatra One', cursive;
+  transform: translateX(-1000px);
+}
+
+.soft-skills-p-anim {
+  animation: soft-skills-p-anim 1.2s forwards;
+}
+
+@keyframes soft-skills-p-anim {
+  0% {
+    transform: translateX(+10000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .hard-skills p {
