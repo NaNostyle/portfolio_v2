@@ -136,14 +136,14 @@ function contactPageRedirect() {
     workSection.style.display = 'none';
 
     window.location.href = '#contact';
-  }, 1800);
+  }, 1600);
 }
 
 function homePageRedirect() {
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = '#home';
-  }, 1800);
+  }, 1600);
 }
 
 function workPageRedirect() {
@@ -153,7 +153,7 @@ function workPageRedirect() {
     cvSection.style.display = 'none';
     contactSection.style.display = 'none';
     workSection.style.display = 'block';
-  }, 1800);
+  }, 1600);
 }
 
 const cards = document.querySelectorAll('.card');
