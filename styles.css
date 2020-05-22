@@ -7,9 +7,7 @@
   scroll-behavior: smooth;
 }
 
-#cv,
-#contact,
-#work {
+section {
   display: none;
 }
 

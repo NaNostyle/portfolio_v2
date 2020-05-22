@@ -172,9 +172,10 @@ window.addEventListener('scroll', function () {
 
   for (var i = 0; i < cardsArray.length; i++) {
     if (
-      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
-      cardsArray[i].offsetTop >= wS &&
-      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
+      (wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
+        cardsArray[i].offsetTop >= wS &&
+        wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2) ||
+      wH === wS
       // wS >= cardsArray[i].offsetTop - cardsArray[i].clientHeight / 2 &&
       // wS <= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
     ) {
@@ -187,8 +188,9 @@ window.addEventListener('scroll', function () {
   }
   for (var j = 0; j < progressBarArray.length; j++) {
     if (
-      wS >= cv.offsetTop - cv.clientHeight / 2 &&
-      wS <= cv.offsetTop + cv.clientHeight / 2
+      (wS >= cv.offsetTop - cv.clientHeight / 2 &&
+        wS <= cv.offsetTop + cv.clientHeight / 2) ||
+      wH === wS
     ) {
       progressBar[j].classList.add('load' + [j + 1]);
     } else {
@@ -197,8 +199,9 @@ window.addEventListener('scroll', function () {
   }
   for (var l = 0; l < softSkillParaArray.length; l++) {
     if (
-      wS >= cv.offsetTop - cv.clientHeight / 2 &&
-      wS <= cv.offsetTop + cv.clientHeight / 2
+      (wS >= cv.offsetTop - cv.clientHeight / 2 &&
+        wS <= cv.offsetTop + cv.clientHeight / 2) ||
+      wH === wS
     ) {
       softSkillParaArray[l].classList.add('soft-skills-p-anim');
     } else {
