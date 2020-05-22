@@ -118,29 +118,31 @@ function removeEltOnRedirect() {
 
 function cvPageRedirect() {
   removeEltOnRedirect();
+  cvSection.style.display = 'block';
   setTimeout(function () {
     contactSection.style.display = 'none';
     workSection.style.display = 'none';
-    cvSection.style.display = 'block';
+
     window.location.href = '#cv';
-  }, 1600);
+  }, 1800);
 }
 
 function contactPageRedirect() {
   removeEltOnRedirect();
+  contactSection.style.display = 'block';
   setTimeout(function () {
     cvSection.style.display = 'none';
     workSection.style.display = 'none';
-    contactSection.style.display = 'block';
+
     window.location.href = '#contact';
-  }, 1600);
+  }, 1800);
 }
 
 function homePageRedirect() {
   removeEltOnRedirect();
   setTimeout(function () {
     window.location.href = '#home';
-  }, 1600);
+  }, 1800);
 }
 
 function workPageRedirect() {
@@ -150,7 +152,7 @@ function workPageRedirect() {
     cvSection.style.display = 'none';
     contactSection.style.display = 'none';
     workSection.style.display = 'block';
-  }, 1600);
+  }, 1800);
 }
 
 const cards = document.querySelectorAll('.card');
