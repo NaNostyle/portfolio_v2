@@ -37,6 +37,7 @@ function toggleMenu() {
     name.classList.add('name-move-back');
     svg.classList.add('name-intro');
   } else {
+    window.location.href = '#home';
     svg.classList.add('svg-fade-out');
     svg.classList.remove('name-intro');
     name.classList.remove('name-intro');
