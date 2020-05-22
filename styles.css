@@ -264,6 +264,13 @@ font-family: 'Yatra One', cursive; */
   }
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
 .portrait-entrance {
   animation: portrait-entrance 2s forwards;
 }
