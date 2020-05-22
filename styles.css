@@ -763,12 +763,8 @@ form {
   color: rgb(129, 12, 12);
   font-weight: 700;
   font-family: 'Tusj';
-  height: 50px;
 }
 
-.soft-skills h2 {
-  height: 50px;
-}
 .soft-skills .btn {
   /* top: 40px; */
   font-family: 'Abril Fatface', cursive;
