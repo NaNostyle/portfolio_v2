@@ -712,7 +712,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 95vh;
+  height: 50vh;
   align-self: center;
 }
 
@@ -723,7 +723,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Yatra One', cursive;
-  height: 95vh;
+  height: 50vh;
   align-self: center;
 }
 
