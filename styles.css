@@ -707,6 +707,7 @@ form {
   justify-content: space-between;
   height: 90vh;
   align-self: center;
+  width: 50%;
 }
 
 .soft-skills {
@@ -718,6 +719,7 @@ form {
   font-family: 'Yatra One', cursive;
   height: 90vh;
   align-self: center;
+  width: 50%;
 }
 
 .soft-skills p {
@@ -755,8 +757,12 @@ form {
   color: rgb(129, 12, 12);
   font-weight: 700;
   font-family: 'Tusj';
+  height: 50px;
 }
 
+.soft-skills h2 {
+  height: 50px;
+}
 .soft-skills .btn {
   /* top: 40px; */
   font-family: 'Abril Fatface', cursive;
