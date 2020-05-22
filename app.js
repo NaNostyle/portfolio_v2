@@ -142,7 +142,7 @@ function contactPageRedirect() {
 function homePageRedirect() {
   removeEltOnRedirect();
   setTimeout(function () {
-    window.location.href = '#home';
+    window.location.href = '#intro';
   }, 1600);
 }
 
