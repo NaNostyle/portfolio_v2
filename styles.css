@@ -7,6 +7,12 @@
   scroll-behavior: smooth;
 }
 
+#cv,
+#contact,
+#work {
+  display: none;
+}
+
 h2 {
   margin: 0;
   padding: 0;
