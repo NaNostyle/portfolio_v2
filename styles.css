@@ -702,6 +702,7 @@ form {
 .skills {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .hard-skills {
@@ -710,6 +711,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 90vh;
+  align-self: center;
 }
 
 .soft-skills {
@@ -719,6 +722,8 @@ form {
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Yatra One', cursive;
+  height: 90vh;
+  align-self: center;
 }
 
 .soft-skills p {
