@@ -704,6 +704,8 @@ form {
   display: flex;
   flex-direction: row;
   height: 90vh;
+  padding: 0;
+  margin: 0;
 }
 
 .hard-skills {
@@ -715,6 +717,8 @@ form {
   height: 90vh;
   align-self: center;
   width: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .soft-skills {
@@ -726,6 +730,8 @@ form {
   font-family: 'Yatra One', cursive;
   height: 90vh;
   align-self: center;
+  padding: 0;
+  margin: 0;
 }
 
 .soft-skills p {
