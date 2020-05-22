@@ -487,10 +487,6 @@ font-family: 'Yatra One', cursive; */
   margin: auto;
 }
 
-#work :nth-last-child() {
-  margin-bottom: 100px;
-}
-
 .card-entrance {
   animation: card-entrance 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
