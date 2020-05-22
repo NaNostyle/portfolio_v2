@@ -713,6 +713,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Yatra One', cursive;
 }
 
 .soft-skills p {
@@ -723,6 +724,7 @@ form {
   padding: 3px;
   font-weight: 600;
   color: #2bbbad;
+  font-family: 'Yatra One', cursive;
 }
 
 .hard-skills p {
@@ -731,8 +733,13 @@ form {
   font-size: 18px;
 }
 
+.hard-skills h2 {
+  color: rgb(129, 12, 12);
+  font-weight: 700;
+  font-family: 'Tusj';
+}
+
 .soft-skills .btn {
-  width: 140px;
   /* top: 40px; */
   font-family: 'Abril Fatface', cursive;
 }
