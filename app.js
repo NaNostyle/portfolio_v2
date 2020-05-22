@@ -16,6 +16,13 @@ const workSection = document.querySelector('#work');
 const cvSection = document.querySelector('#cv');
 const contactSection = document.querySelector('#contact');
 
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    // This hides the address bar:
+    window.scrollTo(0, 1);
+  }, 0);
+});
+
 menuClick.addEventListener('click', toggleMenu);
 
 function closeMenu() {
