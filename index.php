@@ -101,7 +101,7 @@ if(isset($_POST['submit'])){
             l'aide de livres sur le sujet. Je disposais d'une image représentant
             le site et le but était de faire l'intégration de la maquette
             fournie au format photoshop .psd. J'ai également utilisé la
-            librairie d'icône <a href="www.fontawesome.com">Fontawesome</a>.
+            librairie d'icône <a href="www.fontawesome.com">Fontawesome</a>
           </p>
           <div class="card-button">
             <a class="waves-effect waves-light btn">Voir en live</a>
