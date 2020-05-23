@@ -15,6 +15,7 @@ const softSkillsPara = document.querySelectorAll('.soft-skills p');
 const workSection = document.querySelector('#work');
 const cvSection = document.querySelector('#cv');
 const contactSection = document.querySelector('#contact');
+const chevron = document.querySelector('.chevron-container');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -37,6 +38,7 @@ function toggleMenu() {
     name.classList.add('name-move-back');
     svg.classList.add('name-intro');
   } else {
+    chevron.style.display = 'none';
     window.location.href = '#intro';
     svg.classList.add('svg-fade-out');
     svg.classList.remove('name-intro');
@@ -119,7 +121,6 @@ function removeEltOnRedirect() {
 
 function cvPageRedirect() {
   removeEltOnRedirect();
-
   setTimeout(function () {
     contactSection.style.display = 'none';
     workSection.style.display = 'none';
@@ -130,7 +131,6 @@ function cvPageRedirect() {
 
 function contactPageRedirect() {
   removeEltOnRedirect();
-
   setTimeout(function () {
     cvSection.style.display = 'none';
     workSection.style.display = 'none';
@@ -153,6 +153,7 @@ function workPageRedirect() {
     cvSection.style.display = 'none';
     contactSection.style.display = 'none';
     workSection.style.display = 'block';
+    chevron.style.display = 'block';
   }, 1600);
 }
 

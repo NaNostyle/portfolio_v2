@@ -741,7 +741,7 @@ form {
 }
 
 .soft-skills p {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   font-size: 20px;
   border-radius: 10px;
   margin: 10px 10px 10px 10px;
@@ -779,6 +779,7 @@ form {
 
 .soft-skills h2 {
   line-height: 1.12;
+  color: #2bbbad;
 }
 
 .soft-skills .btn {
@@ -795,13 +796,14 @@ h2 {
 }
 
 /* Scrolldown */
-.container {
+.chevron-container {
   position: fixed;
   width: 24px;
   height: 24px;
   bottom: 100px;
   margin-left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 
 .chevron {
@@ -859,7 +861,7 @@ h2 {
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
-
+/* 
 .text {
   display: block;
   margin-top: 75px;
@@ -871,7 +873,7 @@ h2 {
   white-space: nowrap;
   opacity: 0.25;
   animation: pulse 2s linear alternate infinite;
-}
+} */
 
 @keyframes pulse {
   to {
