@@ -229,6 +229,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 submitBtn.addEventListener('click', function (e) {
-  e.preventDefault();
   form.reset();
+  return false;
 });

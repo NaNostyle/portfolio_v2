@@ -1,12 +1,18 @@
+
 <?php 
 if(isset($_POST['submit'])){
-    $to = "larrieu.arnaud@gmail.com";
-    $from = $_POST['email'];
-    $subject = "Message provenant du formulaire";
-    $message = $from . " a écrit le message suivant : " . "\n\n" . $_POST['message'];
-    $headers = "De:" . $from;
+    $to = "larrieu.arnaud@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $from . " wrote the following:" . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    echo "Message envoyé";
+    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you, we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
     ?>
 
@@ -36,7 +42,6 @@ if(isset($_POST['submit'])){
     <title>Menu</title>
   </head>
   <body>
-    <!-- <a class="anchor" id="home"></a> -->
     <div class="menu-click menu-btn" id="menu">
       <div class="menu-text">Menu</div>
     </div>
@@ -253,7 +258,7 @@ if(isset($_POST['submit'])){
     <section id="contact">
       <div class="contact-container">
         <h2>Me contacter</h2>
-        <form action="" method="post">
+            <form method="post">
           <div class="input-field email-input">
             <i class="material-icons prefix">email</i>
             <input
@@ -284,7 +289,7 @@ if(isset($_POST['submit'])){
             type="submit"
             name="submit"
             value="Submit"
-            data-target="modal1"
+            href="#modal1"
           >
             Envoyer
             <i class="material-icons right">send</i>
@@ -306,6 +311,7 @@ if(isset($_POST['submit'])){
       </div>
     </section>
     <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
