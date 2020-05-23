@@ -119,8 +119,9 @@ function removeEltOnRedirect() {
 
 function cvPageRedirect() {
   removeEltOnRedirect();
-  cvSection.style.display = 'block';
+
   setTimeout(function () {
+    cvSection.style.display = 'block';
     contactSection.style.display = 'none';
     workSection.style.display = 'none';
     window.location.href = '#cv';
@@ -129,11 +130,11 @@ function cvPageRedirect() {
 
 function contactPageRedirect() {
   removeEltOnRedirect();
-  contactSection.style.display = 'block';
+
   setTimeout(function () {
+    contactSection.style.display = 'block';
     cvSection.style.display = 'none';
     workSection.style.display = 'none';
-
     window.location.href = '#contact';
   }, 1600);
 }
