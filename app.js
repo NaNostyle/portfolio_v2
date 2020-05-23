@@ -121,20 +121,20 @@ function removeEltOnRedirect() {
 
 function cvPageRedirect() {
   removeEltOnRedirect();
+  contactSection.style.display = 'none';
+  workSection.style.display = 'none';
+  cvSection.style.display = 'block';
   setTimeout(function () {
-    contactSection.style.display = 'none';
-    workSection.style.display = 'none';
-    cvSection.style.display = 'block';
     window.location.href = '#cv';
   }, 1600);
 }
 
 function contactPageRedirect() {
   removeEltOnRedirect();
+  cvSection.style.display = 'none';
+  workSection.style.display = 'none';
+  contactSection.style.display = 'block';
   setTimeout(function () {
-    cvSection.style.display = 'none';
-    workSection.style.display = 'none';
-    contactSection.style.display = 'block';
     window.location.href = '#contact';
   }, 1600);
 }
@@ -148,12 +148,12 @@ function homePageRedirect() {
 
 function workPageRedirect() {
   removeEltOnRedirect();
+  cvSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  workSection.style.display = 'block';
+  chevron.style.display = 'block';
   setTimeout(function () {
     window.location.href = '#work';
-    cvSection.style.display = 'none';
-    contactSection.style.display = 'none';
-    workSection.style.display = 'block';
-    chevron.style.display = 'block';
   }, 1600);
 }
 
