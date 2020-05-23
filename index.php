@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
         ></path>
         <text class="rotate-center">
           <textPath href="#MyPath" startOffset="50%" text-anchor="middle">
-            Developpeur Web
+            Developpeure Web
           </textPath>
         </text>
       </svg>
