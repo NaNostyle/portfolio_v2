@@ -694,7 +694,7 @@ form {
 #cv {
   background: #e9cda7;
   height: 100vh;
-  width: 95vw;
+  width: 100vw;
   margin: auto;
   text-align: center;
   font-family: 'Tusj';
@@ -752,7 +752,7 @@ form {
 
 @keyframes soft-skills-p-anim {
   0% {
-    transform: translateX(1000px);
+    transform: translateX(-1000px);
   }
   100% {
     transform: translateX(0px);
