@@ -708,7 +708,12 @@ form {
   margin: 0;
 }
 
-.hard-skills {
+.skills h2 {
+  display: block;
+  width: 45vw;
+}
+
+.skills .hard-skills {
   align-items: center;
   align-self: auto;
   display: flex;
@@ -732,6 +737,7 @@ form {
   align-self: center;
   padding: 0;
   margin: 0;
+  width: 50%;
 }
 
 .soft-skills p {
@@ -769,6 +775,10 @@ form {
   color: rgb(129, 12, 12);
   font-weight: 700;
   font-family: 'Tusj';
+}
+
+.soft-skills h2 {
+  line-height: 1.12;
 }
 
 .soft-skills .btn {
