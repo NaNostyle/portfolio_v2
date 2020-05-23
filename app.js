@@ -232,38 +232,3 @@ submitBtn.addEventListener('click', function (e) {
   e.preventDefault();
   form.reset();
 });
-
-//   for (var j = 0; j < progressBarArray.length; j++) {
-//     if (
-//       (wS >= cv.offsetTop - cv.clientHeight / 2 &&
-//         wS <= cv.offsetTop + cv.clientHeight / 2) ||
-//       wH === wS
-//     ) {
-//       progressBar[j].classList.add('load' + [j + 1]);
-//     } else {
-//       progressBar[j].classList.remove('load' + [j + 1]);
-//     }
-//   }
-//   for (var l = 0; l < softSkillParaArray.length; l++) {
-//     if (
-//       (wS >= cv.offsetTop - cv.clientHeight / 2 &&
-//         wS <= cv.offsetTop + cv.clientHeight / 2) ||
-//       wH === wS
-//     ) {
-//       softSkillParaArray[l].classList.add('soft-skills-p-anim');
-//     } else {
-//       softSkillParaArray[l].classList.remove('soft-skills-p-anim');
-//     }
-//   }
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   var elems = document.querySelectorAll('.carousel');
-//   var options = {
-//     fullWidth: false,
-//     indicators: true,
-//     numVisible: 4,
-//     duration: 100,
-//   };
-//   var instances = M.Carousel.init(elems, options);
-// });
