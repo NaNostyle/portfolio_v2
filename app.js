@@ -191,6 +191,8 @@ window.addEventListener('scroll', function () {
     }
     if (wS + 20 >= workSection.clientHeight) {
       chevron.style.display = 'none';
+    } else {
+      chevron.style.display = 'block';
     }
   }
   if (

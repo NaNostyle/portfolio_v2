@@ -579,15 +579,6 @@ font-family: 'Varela', sans-serif;
 font-family: 'Yatra One', cursive; */
 /* fin cards */
 
-#contact {
-  height: 100vh;
-  background-color: white;
-}
-
-form {
-  width: 80vw;
-}
-
 .progress {
   background: rgba(255, 255, 255, 0.3);
   justify-content: flex-start;
@@ -881,4 +872,16 @@ h2 {
   to {
     opacity: 1;
   }
+}
+
+#contact h2 {
+}
+
+#contact {
+  height: 100vh;
+  background-color: white;
+}
+
+form {
+  width: 80vw;
 }
