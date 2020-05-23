@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/arnaudcastaing
-    - /bin/cp -R menu $DEPLOYPATH
+    - /bin/cp test.html $DEPLOYPATH
