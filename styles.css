@@ -466,7 +466,7 @@ h2 {
 
 .img-work-overlay {
   position: absolute;
-  bottom: 4px;
+  /* bottom: 4px; */
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -698,6 +698,7 @@ form {
   margin: auto;
   text-align: center;
   font-family: 'Tusj';
+  scroll-behavior: smooth;
 }
 
 .skills {
@@ -743,13 +744,14 @@ form {
 .soft-skills p {
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 20px;
-  border-radius: 10px;
-  margin: 10px 10px 10px 10px;
+  border-radius: 5px;
+  margin: 10px;
   padding: 3px;
   font-weight: 600;
   color: #2bbbad;
   font-family: 'Yatra One', cursive;
   transform: translateX(-1000px);
+  border: solid 1px white;
 }
 
 .soft-skills-p-anim {

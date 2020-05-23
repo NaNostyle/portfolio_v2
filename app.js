@@ -189,6 +189,9 @@ window.addEventListener('scroll', function () {
       cardsArray[i].classList.remove('card-entrance');
       cardsArray[i].classList.add('card-exit');
     }
+    if (wS + 20 >= workSection.clientHeight) {
+      chevron.style.display = 'none';
+    }
   }
   if (
     wS >= cv.offsetTop - cv.clientHeight / 2 &&
