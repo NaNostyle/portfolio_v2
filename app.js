@@ -125,14 +125,6 @@ function cvPageRedirect() {
     workSection.style.display = 'none';
     window.location.href = '#cv';
   }, 1600);
-  // setTimeout(function () {
-  //   for (var j = 0; j < progressBarArray.length; j++) {
-  //     progressBar[j].classList.add('load' + [j + 1]);
-  //   }
-  //   for (var l = 0; l < softSkillParaArray.length; l++) {
-  //     softSkillParaArray[l].classList.add('soft-skills-p-anim');
-  //   }
-  // }, 2400);
 }
 
 function contactPageRedirect() {

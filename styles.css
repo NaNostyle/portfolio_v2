@@ -752,7 +752,7 @@ form {
 
 @keyframes soft-skills-p-anim {
   0% {
-    transform: translateX(+10000px);
+    transform: translateX(1000px);
   }
   100% {
     transform: translateX(0px);
