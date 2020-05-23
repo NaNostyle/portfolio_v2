@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
 if(isset($_POST['submit'])){
     $to = "larrieu.arnaud@gmail.com";
     $from = $_POST['email'];
@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     echo "Message envoyé";
     }
-    ?> -->
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
