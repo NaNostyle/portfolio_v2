@@ -16,6 +16,10 @@ const workSection = document.querySelector('#work');
 const cvSection = document.querySelector('#cv');
 const contactSection = document.querySelector('#contact');
 const chevron = document.querySelector('.chevron-container');
+const form = document.querySelector('form');
+const submitBtn = document.querySelector('.submit-btn');
+const emailInput = document.querySelector('.email-input');
+const textareaInput = document.querySelector('.textarea-input');
 
 menuClick.addEventListener('click', toggleMenu);
 
@@ -213,6 +217,20 @@ window.addEventListener('scroll', function () {
       softSkillParaArray[l].classList.remove('soft-skills-p-anim');
     }
   }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var options = {
+    opacity: 0.5,
+    endingTop: '25%',
+  };
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems, options);
+});
+
+submitBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  form.reset();
 });
 
 //   for (var j = 0; j < progressBarArray.length; j++) {

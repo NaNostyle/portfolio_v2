@@ -1,14 +1,14 @@
-<?php 
+<!-- <?php 
 if(isset($_POST['submit'])){
     $to = "larrieu.arnaud@gmail.com";
-    $from = $_POST['email']; 
-    $subject = "Form submission";
+    $from = $_POST['email'];
+    $subject = "Message provenant du formulaire";
     $message = $from . " a écrit le message suivant : " . "\n\n" . $_POST['message'];
-    $headers = "From:" . $from;
+    $headers = "De:" . $from;
     mail($to,$subject,$message,$headers);
-    echo "Mail sent";
+    echo "Message envoyé";
     }
-    ?>
+    ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
         ></path>
         <text class="rotate-center">
           <textPath href="#MyPath" startOffset="50%" text-anchor="middle">
-            Developpeure Web
+            Developpeur Web
           </textPath>
         </text>
       </svg>
@@ -254,7 +254,7 @@ if(isset($_POST['submit'])){
       <div class="contact-container">
         <h2>Me contacter</h2>
         <form action="" method="post">
-          <div class="input-field">
+          <div class="input-field email-input">
             <i class="material-icons prefix">email</i>
             <input
               id="icon_prefix1"
@@ -270,7 +270,7 @@ if(isset($_POST['submit'])){
             ></span>
           </div>
 
-          <div class="input-field">
+          <div class="input-field textarea-input">
             <i class="material-icons prefix">mode_edit</i>
             <textarea
               id="icon_prefix2"
@@ -280,15 +280,26 @@ if(isset($_POST['submit'])){
             <label for="icon_prefix2">Message</label>
           </div>
           <button
-            class="btn waves-effect waves-light"
+            class="btn waves-effect waves-light submit-btn modal-trigger"
             type="submit"
             name="submit"
             value="Submit"
+            data-target="modal1"
           >
             Envoyer
             <i class="material-icons right">send</i>
           </button>
         </form>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Merci pour votre message</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >Fermer</a
+            >
+          </div>
+        </div>
         <i class="fab fa-github-square fa-5x contact-icon"></i>
         <i class="fab fa-facebook-square fa-5x contact-icon"></i>
         <i class="fab fa-twitter-square fa-5x contact-icon"></i>
