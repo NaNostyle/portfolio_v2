@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
     <title>Menu</title>
   </head>
   <body>
-    <a class="anchor" id="home"></a>
+    <!-- <a class="anchor" id="home"></a> -->
     <div class="menu-click menu-btn" id="menu">
       <div class="menu-text">Menu</div>
     </div>
@@ -74,10 +74,9 @@ if(isset($_POST['submit'])){
     <ul class="menu-items menu-items-appear">
       <li><a class="home-link">Accueil</a></li>
       <li><a class="work-link">Travaux</a></li>
-      <li><a class="cv-link">CV</a></li>
+      <li><a class="cv-link">Skills & CV</a></li>
       <li><a class="contact-link">Me contacter</a></li>
     </ul>
-
     <section id="work">
       <h2>Quelques travaux</h2>
       <div class="card">
@@ -132,7 +131,7 @@ if(isset($_POST['submit'])){
             aussi bien sur mobile que sur tablette ou PC. Utilisation de média
             queries permettant de cibler le type d'appareil côté client et
             ainsi, d'adapter le design du site. J'ai employé le préprocesseur
-            SASS qui aide à écrire un code CSS plus compréhensible.
+            SASS qui aide à écrire un code CSS plus compréhensible
           </p>
           <div class="card-button">
             <a
@@ -181,82 +180,119 @@ if(isset($_POST['submit'])){
           </div>
         </div>
       </div>
+      <div class="chevron-container">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <!-- <span class="text">Scroll down</span> -->
+      </div>
     </section>
     <section id="cv">
-      <div class="hard-skills">
-        <h2>Hard skills</h2>
-        <p>HTML</p>
-        <div class="progress">
-          <div class="progress-value load-html"></div>
+      <div class="skills">
+        <div class="hard-skills">
+          <h2 class="hard-skills-title">Hard <br />skills</h2>
+          <div class="bar-container">
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
+          <div class="bar-container">
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
+          <div class="bar-container">
+            <p>JavaScript</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
+          <div class="bar-container">
+            <p>Bootstrap</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
+          <div class="bar-container">
+            <p>ReactJs</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
+          <div class="bar-container">
+            <p>PHP</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
+          <div class="bar-container">
+            <p>Vscode</p>
+            <div class="progress">
+              <div class="progress-value bar"></div>
+            </div>
+          </div>
         </div>
-        <p>CSS</p>
-        <div class="progress">
-          <div class="progress-value load-css"></div>
+
+        <div class="soft-skills">
+          <h2 class="soft-skills-title">Soft <br />skills</h2>
+          <p>Travail en équipe</p>
+          <p>Adaptation</p>
+          <p>
+            Résolution de problèmes
+          </p>
+          <p>Créativité</p>
+          <p>Autonomie</p>
+          <a class="waves-effect waves-light btn"
+            ><i class="material-icons left">file_download</i>Mon CV</a
+          >
         </div>
-        <p>JavaScript</p>
-        <div class="progress">
-          <div class="progress-value load-javascript"></div>
-        </div>
-        <p>Bootstrap</p>
-        <div class="progress">
-          <div class="progress-value load-boostrap"></div>
-        </div>
-        <p>ReactJs</p>
-        <div class="progress">
-          <div class="progress-value load-reactjs"></div>
-        </div>
-        <p>PHP</p>
-        <div class="progress">
-          <div class="progress-value load-php"></div>
-        </div>
-        <p>Vscode</p>
-        <div class="progress">
-          <div class="progress-value load-vscode"></div>
-        </div>
-      </div>
-      <div class="soft-skills">
-        <h2>Soft skills</h2>
-        <p>Travail en équipe</p>
-        <p>Adaptation</p>
-        <p>Résolution de problèmes</p>
-        <p>Créativité</p>
-        <p>Autonomie</p>
       </div>
     </section>
     <section id="contact">
-      <h2>Laissez-moi un message</h2>
+      <div class="contact-container">
+        <h2>Me contacter</h2>
+        <form action="" method="post">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input
+              id="icon_prefix1"
+              type="email"
+              name="email"
+              class="validate"
+            />
+            <label for="icon_prefix1">Email</label>
+            <span
+              class="helper-text"
+              data-error="Invalide"
+              data-success="Valide"
+            ></span>
+          </div>
 
-      <form action="" method="post">
-        <div class="input-field">
-          <i class="material-icons prefix">email</i>
-          <input id="icon_prefix1" type="email" name="email" class="validate" />
-          <label for="icon_prefix1">Email</label>
-          <span
-            class="helper-text"
-            data-error="Invalide"
-            data-success="Valide"
-          ></span>
-        </div>
-
-        <div class="input-field">
-          <i class="material-icons prefix">mode_edit</i>
-          <textarea
-            id="icon_prefix2"
-            class="materialize-textarea"
-            name="message"
-          ></textarea>
-          <label for="icon_prefix2">Message</label>
-        </div>
-        <button
-          class="btn waves-effect waves-light"
-          type="submit"
-          name="submit"
-          value="Submit"
-        >
-          Envoyer
-          <i class="material-icons right">send</i>
-        </button>
-      </form>
+          <div class="input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea
+              id="icon_prefix2"
+              class="materialize-textarea"
+              name="message"
+            ></textarea>
+            <label for="icon_prefix2">Message</label>
+          </div>
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="submit"
+            value="Submit"
+          >
+            Envoyer
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+        <i class="fab fa-github-square fa-5x contact-icon"></i>
+        <i class="fab fa-facebook-square fa-5x contact-icon"></i>
+        <i class="fab fa-twitter-square fa-5x contact-icon"></i>
+      </div>
     </section>
     <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
