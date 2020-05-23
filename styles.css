@@ -874,14 +874,30 @@ h2 {
   }
 }
 
-#contact h2 {
-}
-
 #contact {
   height: 100vh;
   background-color: white;
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
+
+.contact-container {
+  width: 95vw;
+  margin: auto;
 }
 
 form {
   width: 80vw;
+  text-align: left;
+}
+
+#contact h2 {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-size: 40px;
+}
+
+.contact-icon {
+  margin: 50px 10px;
 }
