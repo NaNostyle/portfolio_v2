@@ -492,6 +492,7 @@ font-family: 'Yatra One', cursive; */
 .card {
   width: 86vw;
   margin: auto;
+  margin-top: 18px;
 }
 
 .card-entrance {
