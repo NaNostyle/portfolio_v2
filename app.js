@@ -22,14 +22,19 @@ const emailInput = document.querySelector('.email-input');
 const textareaInput = document.querySelector('.textarea-input');
 const intro = document.querySelector('#intro');
 
-windowHeight = window.innerHeight + 'px';
-intro.style.height = windowHeight;
-cvSection.style.height = windowHeight;
-contactSection.style.height = windowHeight;
+function resize() {
+  windowHeight = window.innerHeight + 'px';
+  intro.style.height = windowHeight;
+  cvSection.style.height = windowHeight;
+  contactSection.style.height = windowHeight;
+}
+
+resize();
 
 menuClick.addEventListener('click', toggleMenu);
 
 function closeMenu() {
+  resize();
   menu.classList.remove('menu-scale-up');
   menuText.textContent = '';
   menuTextDelay();
@@ -43,11 +48,13 @@ function closeMenu() {
 
 function toggleMenu() {
   if (menu.classList.contains('menu-scale-up')) {
+    resize();
     closeMenu();
     name.style.position = 'relative';
     name.classList.add('name-move-back');
     svg.classList.add('name-intro');
   } else {
+    resize();
     chevron.style.display = 'none';
     window.location.href = '#intro';
     svg.classList.add('svg-fade-out');
