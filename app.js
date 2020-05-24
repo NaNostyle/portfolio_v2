@@ -28,7 +28,9 @@ function resize() {
   cvSection.style.height = windowHeight;
   contactSection.style.height = windowHeight;
 }
-
+window.addEventListener('scroll', function () {
+  resize();
+});
 resize();
 
 menuClick.addEventListener('click', toggleMenu);
