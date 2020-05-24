@@ -312,7 +312,7 @@ h1 {
     font-size: 60px;
   }
   100% {
-    transform: translate(-30vw, -30vh);
+    transform: translate(-30vw, -28vh);
     font-size: 30px;
   }
 }
