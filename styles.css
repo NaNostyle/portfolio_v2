@@ -360,8 +360,6 @@ h1 {
 }
 
 #intro {
-  top: 100px;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -684,7 +682,6 @@ font-family: 'Yatra One', cursive; */
 
 #cv {
   background: #e9cda7;
-  height: 100vh;
   width: 100vw;
   margin: auto;
   text-align: center;
@@ -695,7 +692,7 @@ font-family: 'Yatra One', cursive; */
 .skills {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -711,7 +708,7 @@ font-family: 'Yatra One', cursive; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 95vh;
   align-self: center;
   width: 50%;
   padding: 0;
@@ -725,7 +722,7 @@ font-family: 'Yatra One', cursive; */
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Yatra One', cursive;
-  height: 90vh;
+  height: 95vh;
   align-self: center;
   padding: 0;
   margin: 0;
@@ -875,7 +872,6 @@ h2 {
 }
 
 #contact {
-  height: 100vh;
   background-color: white;
   text-align: center;
   width: 100vw;

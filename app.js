@@ -20,6 +20,12 @@ const form = document.querySelector('form');
 const submitBtn = document.querySelector('.submit-btn');
 const emailInput = document.querySelector('.email-input');
 const textareaInput = document.querySelector('.textarea-input');
+const intro = document.querySelector('#intro');
+
+windowHeight = window.innerHeight + 'px';
+intro.style.height = windowHeight;
+cvSection.style.height = windowHeight;
+contactSection.style.height = windowHeight;
 
 menuClick.addEventListener('click', toggleMenu);
 
