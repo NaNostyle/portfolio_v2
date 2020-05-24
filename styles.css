@@ -692,7 +692,6 @@ font-family: 'Yatra One', cursive; */
 .skills {
   display: flex;
   flex-direction: row;
-  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -708,7 +707,7 @@ font-family: 'Yatra One', cursive; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 95vh;
+  height: 92vh;
   align-self: center;
   width: 50%;
   padding: 0;
@@ -722,7 +721,7 @@ font-family: 'Yatra One', cursive; */
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Yatra One', cursive;
-  height: 95vh;
+  height: 92vh;
   align-self: center;
   padding: 0;
   margin: 0;
