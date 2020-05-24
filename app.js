@@ -192,10 +192,10 @@ window.addEventListener('scroll', function () {
 
   for (var i = 0; i < cardsArray.length; i++) {
     if (
-      (wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
-        cardsArray[i].offsetTop >= wS &&
-        wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2) ||
-      wH === wS
+      wS >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2 - wH &&
+      cardsArray[i].offsetTop >= wS &&
+      wS + wH >= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
+
       // wS >= cardsArray[i].offsetTop - cardsArray[i].clientHeight / 2 &&
       // wS <= cardsArray[i].offsetTop + cardsArray[i].clientHeight / 2
     ) {
