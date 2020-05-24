@@ -28,15 +28,11 @@ function resize() {
   cvSection.style.height = windowHeight;
   contactSection.style.height = windowHeight;
 }
-window.addEventListener('scroll', function () {
-  resize();
-});
 resize();
 
 menuClick.addEventListener('click', toggleMenu);
 
 function closeMenu() {
-  resize();
   menu.classList.remove('menu-scale-up');
   menuText.textContent = '';
   menuTextDelay();
@@ -50,13 +46,11 @@ function closeMenu() {
 
 function toggleMenu() {
   if (menu.classList.contains('menu-scale-up')) {
-    resize();
     closeMenu();
     name.style.position = 'relative';
     name.classList.add('name-move-back');
     svg.classList.add('name-intro');
   } else {
-    resize();
     chevron.style.display = 'none';
     window.location.href = '#intro';
     svg.classList.add('svg-fade-out');
@@ -182,6 +176,7 @@ var progressBarArray = Array.from(progressBar);
 softSkillParaArray = Array.from(softSkillsPara);
 
 window.addEventListener('scroll', function () {
+  resize();
   var wH = window.outerHeight;
   var wS = window.scrollY;
 
