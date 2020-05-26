@@ -319,7 +319,7 @@ h1 {
 
 @keyframes name-move-back {
   0% {
-    transform: translate(-30vw, -30vh);
+    transform: translate(-30vw, -28vh);
     font-size: 30px;
   }
   100% {
