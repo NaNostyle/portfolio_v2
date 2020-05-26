@@ -453,6 +453,7 @@ h1 {
   z-index: 11;
   margin: 0;
   padding: 0;
+  will-change: transform;
 }
 
 .name-move-up {
@@ -467,6 +468,7 @@ h1 {
 
 @-webkit-keyframes name-move-up {
   0% {
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     font-size: 60px;
@@ -480,6 +482,7 @@ h1 {
 
 @keyframes name-move-up {
   0% {
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     font-size: 60px;
@@ -870,6 +873,7 @@ div.card-reveal p {
   border-radius: 100px;
   background: #2bbbad;
   height: 10px;
+  will-change: auto;
 }
 .load1 {
   -webkit-animation: load1 3s normal forwards;
@@ -1114,6 +1118,7 @@ div.card-reveal p {
   -ms-transform: translateX(-1000px);
   transform: translateX(-1000px);
   border: solid 1px white;
+  will-change: transform;
 }
 
 .soft-skills-p-anim {
