@@ -6,8 +6,7 @@ if(isset($_POST['submit'])){
     $message = $from . " a ecrit le message suivant:" . "\n\n" . $_POST['message'];
     $headers = "From:" . $from; 
     mail($to,$subject,$message,$headers);
-    echo "Email envoye, je vous repondrais rapidement";
-    
+    // echo "Email envoye, je vous repondrais rapidement";
     }
     ?>
 
@@ -271,7 +270,8 @@ if(isset($_POST['submit'])){
     <section id="contact">
       <div class="contact-container">
         <h2>Me contacter</h2>
-        <form method="post">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form method="post" target="dummyframe">
           <div class="input-field email-input">
             <i class="material-icons prefix notranslate" translate="no"
               >email</i
@@ -302,15 +302,15 @@ if(isset($_POST['submit'])){
             <label for="icon_prefix2">Message</label>
           </div>
           <button
-            class="btn waves-effect waves-light submit-btn modal-trigger"
+            class="btn waves-effect waves-light submit-btn"
             type="submit"
             name="submit"
             value="Submit"
-            href="#modal1"
           >
             Envoyer
             <i class="material-icons right notranslate" translate="no">send</i>
           </button>
+          <button class="modal-trigger btn-hidden" href="#modal1"></button>
         </form>
         <div id="modal1" class="modal">
           <div class="modal-content">

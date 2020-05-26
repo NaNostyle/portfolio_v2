@@ -21,6 +21,7 @@ const submitBtn = document.querySelector('.submit-btn');
 const emailInput = document.querySelector('.email-input');
 const textareaInput = document.querySelector('.textarea-input');
 const intro = document.querySelector('#intro');
+const btnHidden = document.querySelector('.btn-hidden');
 
 function resize() {
   windowHeight = window.innerHeight + 'px';
@@ -240,7 +241,57 @@ document.addEventListener('DOMContentLoaded', function () {
   var instances = M.Modal.init(elems, options);
 });
 
-submitBtn.addEventListener('click', function (e) {
-  form.reset();
-  return false;
+submitBtn.addEventListener('click', function () {
+  btnHidden.click();
 });
+
+form.addEventListener('submit', function () {
+  setTimeout(function () {
+    form.reset();
+  }, 1600);
+});
+
+// submitBtn.addEventListener('click', function () {
+//   submitBtn.classList.add('modal-trigger');
+//   submitBtn.setAttribute.href = '#modal1';
+// });
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const fd = new FormData(form);
+//   const xhr = new XMLHttpRequest();
+//   xhr.addEventListener('load', (e) => {
+//     console.log(e.target.responseText);
+//   });
+//   xhr.addEventListener('error', (e) => {
+//     console.log(e);
+//   });
+//   xhr.open('POST', form.action);
+//   xhr.send(fd);
+// });
+
+// var data = new FormData();
+// data.append('user', 'person');
+// data.append('pwd', 'password');
+// data.append('organization', 'place');
+// data.append('requiredkey', 'key');
+
+// var xhr = new XMLHttpRequest();
+// xhr.open('POST', 'somewhere', true);
+// xhr.onload = function () {
+//     // do something to response
+//     console.log(this.responseText);
+// };
+// xhr.send(data);
+
+// function SubForm() {
+//   hr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+//   xhr.onload = function() {
+//     url: 'test',
+//     type: 'post',
+//     data: form.serialize(),
+//     success: function () {
+//       alert('worked');
+//     },
+//   }
+// }
