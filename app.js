@@ -138,10 +138,10 @@ function cvPageRedirect() {
   removeEltOnRedirect();
   contactSection.style.display = 'none';
   workSection.style.display = 'none';
-  cvSection.style.display = 'block';
   setTimeout(function () {
+    cvSection.style.display = 'block';
     window.location.href = '#cv';
-  }, 1600);
+  }, 2000);
 }
 
 function contactPageRedirect() {
