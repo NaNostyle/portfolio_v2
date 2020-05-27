@@ -1138,8 +1138,8 @@ div.card-reveal p {
     transform: translateX(-1000px);
   }
   100% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -1149,8 +1149,8 @@ div.card-reveal p {
     transform: translateX(-1000px);
   }
   100% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 

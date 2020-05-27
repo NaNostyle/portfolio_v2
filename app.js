@@ -11,7 +11,6 @@ const cvLink = document.querySelector('.cv-link');
 const workLink = document.querySelector('.work-link');
 const card = document.querySelector('.card');
 const progressBar = document.querySelectorAll('.bar');
-const softSkillsPara = document.querySelectorAll('.soft-skills p');
 const workSection = document.querySelector('#work');
 const cvSection = document.querySelector('#cv');
 const contactSection = document.querySelector('#contact');
@@ -144,7 +143,7 @@ function cvPageRedirect() {
   resize();
   setTimeout(function () {
     window.location.href = '#cv';
-  }, 1600);
+  }, 1300);
 }
 
 function contactPageRedirect() {
