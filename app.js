@@ -180,7 +180,6 @@ function workPageRedirect() {
 const cards = document.querySelectorAll('.card');
 var cardsArray = Array.from(cards);
 var progressBarArray = Array.from(progressBar);
-softSkillParaArray = Array.from(softSkillsPara);
 
 window.addEventListener('scroll', function () {
   // resize();
