@@ -182,7 +182,7 @@ var cardsArray = Array.from(cards);
 var progressBarArray = Array.from(progressBar);
 
 window.addEventListener('scroll', function () {
-  // resize();
+  resize();
   var wH = window.outerHeight;
   var wS = window.scrollY;
 
