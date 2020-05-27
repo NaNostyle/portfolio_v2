@@ -140,10 +140,11 @@ function cvPageRedirect() {
   removeEltOnRedirect();
   contactSection.style.display = 'none';
   workSection.style.display = 'none';
+  cvSection.style.display = 'block';
+  resize();
   setTimeout(function () {
-    cvSection.style.display = 'block';
     window.location.href = '#cv';
-  }, 2000);
+  }, 1600);
 }
 
 function contactPageRedirect() {
@@ -151,6 +152,7 @@ function contactPageRedirect() {
   cvSection.style.display = 'none';
   workSection.style.display = 'none';
   contactSection.style.display = 'block';
+  resize();
   setTimeout(function () {
     window.location.href = '#contact';
   }, 1600);
@@ -158,6 +160,7 @@ function contactPageRedirect() {
 
 function homePageRedirect() {
   removeEltOnRedirect();
+  resize();
   setTimeout(function () {
     window.location.href = '#intro';
   }, 1600);
@@ -169,6 +172,7 @@ function workPageRedirect() {
   contactSection.style.display = 'none';
   workSection.style.display = 'block';
   chevron.style.display = 'block';
+  resize();
   setTimeout(function () {
     window.location.href = '#work';
   }, 1600);
@@ -180,7 +184,7 @@ var progressBarArray = Array.from(progressBar);
 softSkillParaArray = Array.from(softSkillsPara);
 
 window.addEventListener('scroll', function () {
-  resize();
+  // resize();
   var wH = window.outerHeight;
   var wS = window.scrollY;
 

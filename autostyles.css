@@ -1109,9 +1109,9 @@ div.card-reveal p {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
+  -webkit-transform: translateX(-1000px);
+  -ms-transform: translateX(-1000px);
+  transform: translateX(-1000px);
 }
 
 .soft-skills ul li {
@@ -1134,8 +1134,8 @@ div.card-reveal p {
 
 @-webkit-keyframes soft-skills-ul-anim {
   0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0%);
@@ -1145,8 +1145,8 @@ div.card-reveal p {
 
 @keyframes soft-skills-ul-anim {
   0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0%);
