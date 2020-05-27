@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/nanomar3/public_html/arnaudcastaing/portfoliodev
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp autostyles.css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R fonts $DEPLOYPATH
