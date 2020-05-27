@@ -717,6 +717,7 @@ h2 {
 .card-title {
   display: flex !important;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .card-entrance {
