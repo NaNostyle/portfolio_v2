@@ -22,6 +22,7 @@ const emailInput = document.querySelector('.email-input');
 const textareaInput = document.querySelector('.textarea-input');
 const intro = document.querySelector('#intro');
 const btnHidden = document.querySelector('.btn-hidden');
+const softSkillsUl = document.querySelector('.soft-skills ul');
 
 function resize() {
   windowHeight = window.innerHeight + 'px';
@@ -219,16 +220,12 @@ window.addEventListener('scroll', function () {
     for (var j = 0; j < progressBarArray.length; j++) {
       progressBar[j].classList.add('load' + [j + 1]);
     }
-    for (var l = 0; l < softSkillParaArray.length; l++) {
-      softSkillParaArray[l].classList.add('soft-skills-p-anim');
-    }
+    softSkillsUl.classList.add('soft-skills-ul-anim');
   } else {
     for (var j = 0; j < progressBarArray.length; j++) {
       progressBar[j].classList.remove('load' + [j + 1]);
     }
-    for (var l = 0; l < softSkillParaArray.length; l++) {
-      softSkillParaArray[l].classList.remove('soft-skills-p-anim');
-    }
+    softSkillsUl.classList.remove('soft-skills-ul-anim');
   }
 });
 

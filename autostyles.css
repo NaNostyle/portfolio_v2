@@ -1104,7 +1104,17 @@ div.card-reveal p {
   width: 50%;
 }
 
-.soft-skills p {
+.soft-skills ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.soft-skills ul li {
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 20px;
   border-radius: 5px;
@@ -1113,37 +1123,34 @@ div.card-reveal p {
   font-weight: 600;
   color: #2bbbad;
   font-family: 'Yatra One', cursive;
-  -webkit-transform: translateX(-1000px);
-  -ms-transform: translateX(-1000px);
-  transform: translateX(-1000px);
   border: solid 1px white;
   will-change: transform;
 }
 
-.soft-skills-p-anim {
-  -webkit-animation: soft-skills-p-anim 1.2s forwards;
-  animation: soft-skills-p-anim 1.2s forwards;
+.soft-skills-ul-anim {
+  -webkit-animation: soft-skills-ul-anim 1.2s forwards;
+  animation: soft-skills-ul-anim 1.2s forwards;
 }
 
-@-webkit-keyframes soft-skills-p-anim {
+@-webkit-keyframes soft-skills-ul-anim {
   0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
-@keyframes soft-skills-p-anim {
+@keyframes soft-skills-ul-anim {
   0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
