@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/nanomar3/public_html/arnaudcastaing
+    - export DEPLOYPATH=/home/nanomar3/public_html/arnaudcastaing
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp autostyles.css $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
