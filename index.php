@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 if(isset($_POST['submit'])){
   $to = "larrieu.arnaud@gmail.com"; 
   $from = $_POST['email']; 
@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
   mail($to,$subject,$message,$headers);
   // echo "Email envoye, je vous repondrais rapidement";
   }
-  ?>
+  ?> 
 
 <!DOCTYPE html>
 <html
@@ -21,6 +21,8 @@ xmlns="http://www.w3.org/1999/xhtml"
   <meta charset="UTF-8" />
   <meta name="google" value="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Portfolio de Arnaud Larrieu">
+  <link rel="canonical" href="https://arnaudcastaing.fr"/>
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&family=Fjalla+One&family=IBM+Plex+Serif:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&family=Varela&family=Yatra+One&display=swap"
     rel="stylesheet"
@@ -86,7 +88,7 @@ xmlns="http://www.w3.org/1999/xhtml"
     <h2>Quelques travaux</h2>
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/projet1.png" />
+        <img class="activator" src="./img/projet1-opti.jpg" />
       </div>
       <div class="card-content">
         <span class="card-title activator"
@@ -120,7 +122,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/projet2.png" />
+        <img class="activator" src="./img/projet2-opti.jpg" />
       </div>
       <div class="card-content">
         <span class="card-title activator"
@@ -155,7 +157,7 @@ xmlns="http://www.w3.org/1999/xhtml"
     </div>
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/projet3.png" />
+        <img class="activator" src="./img/projet3-opti.jpg" />
       </div>
       <div class="card-content">
         <span class="card-title activator"
@@ -192,7 +194,7 @@ xmlns="http://www.w3.org/1999/xhtml"
     </div>
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/projet5.png" />
+        <img class="activator" src="./img/projet4-opti.jpg" />
       </div>
       <div class="card-content">
         <span class="card-title activator"

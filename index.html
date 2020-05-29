@@ -1,14 +1,14 @@
-<!-- <?php 
+<?php 
 if(isset($_POST['submit'])){
-    $to = "larrieu.arnaud@gmail.com"; 
-    $from = $_POST['email']; 
-    $subject = "Form submission";  
-    $message = $from . " a ecrit le message suivant:" . "\n\n" . $_POST['message'];
-    $headers = "From:" . $from; 
-    mail($to,$subject,$message,$headers);
-    // echo "Email envoye, je vous repondrais rapidement";
-    }
-    ?> -->
+  $to = "larrieu.arnaud@gmail.com"; 
+  $from = $_POST['email']; 
+  $subject = "Form submission";  
+  $message = $from . " a ecrit le message suivant:" . "\n\n" . $_POST['message'];
+  $headers = "From:" . $from; 
+  mail($to,$subject,$message,$headers);
+  // echo "Email envoye, je vous repondrais rapidement";
+  }
+  ?>
 
 <!DOCTYPE html>
 <html
@@ -21,6 +21,8 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8" />
     <meta name="google" value="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Portfolio de Arnaud Larrieu" />
+    <link rel="canonical" href="https://arnaudcastaing.fr" />
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&family=Fjalla+One&family=IBM+Plex+Serif:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&family=Varela&family=Yatra+One&display=swap"
       rel="stylesheet"
@@ -59,7 +61,7 @@ if(isset($_POST['submit'])){
           fill="none"
           stroke="none"
           d="M-500,7
-          C-500,-500 500,-500 500,2"
+        C-500,-500 500,-500 500,2"
         ></path>
         <text class="rotate-center">
           <textPath href="#MyPath" startOffset="50%" text-anchor="middle">
@@ -86,7 +88,7 @@ if(isset($_POST['submit'])){
       <h2>Quelques travaux</h2>
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./img/projet1.png" />
+          <img class="activator" src="./img/projet1-opti.jpg" />
         </div>
         <div class="card-content">
           <span class="card-title activator"
@@ -120,7 +122,7 @@ if(isset($_POST['submit'])){
 
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./img/projet2.png" />
+          <img class="activator" src="./img/projet2-opti.jpg" />
         </div>
         <div class="card-content">
           <span class="card-title activator"
@@ -155,7 +157,7 @@ if(isset($_POST['submit'])){
       </div>
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./img/projet3.png" />
+          <img class="activator" src="./img/projet3-opti.jpg" />
         </div>
         <div class="card-content">
           <span class="card-title activator"
@@ -192,7 +194,7 @@ if(isset($_POST['submit'])){
       </div>
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="./img/projet5.png" />
+          <img class="activator" src="./img/projet4-opti.jpg" />
         </div>
         <div class="card-content">
           <span class="card-title activator"
@@ -291,12 +293,12 @@ if(isset($_POST['submit'])){
             <li>Autonomie</li>
           </ul>
           <!-- <p>Travail en équipe</p>
-          <p>Adaptation</p>
-          <p>
-            Résolution de problèmes
-          </p>
-          <p>Créativité</p>
-          <p>Autonomie</p> -->
+        <p>Adaptation</p>
+        <p>
+          Résolution de problèmes
+        </p>
+        <p>Créativité</p>
+        <p>Autonomie</p> -->
           <a class="waves-effect waves-light btn"
             ><i class="material-icons left notranslate" translate="no"
               >file_download</i

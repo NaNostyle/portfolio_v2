@@ -23,6 +23,8 @@ const intro = document.querySelector('#intro');
 const btnHidden = document.querySelector('.btn-hidden');
 const softSkillsUl = document.querySelector('.soft-skills ul');
 
+homeLink.style.border = 'solid 2px white';
+
 function resize() {
   windowHeight = window.innerHeight + 'px';
   intro.style.height = windowHeight;
@@ -140,6 +142,10 @@ function cvPageRedirect() {
   contactSection.style.display = 'none';
   workSection.style.display = 'none';
   cvSection.style.display = 'block';
+  cvLink.style.border = 'solid 2px white';
+  contactLink.style.border = 'none';
+  workLink.style.border = 'none';
+  homeLink.style.border = 'none';
   resize();
   setTimeout(function () {
     window.location.href = '#cv';
@@ -151,6 +157,10 @@ function contactPageRedirect() {
   cvSection.style.display = 'none';
   workSection.style.display = 'none';
   contactSection.style.display = 'block';
+  cvLink.style.border = 'none';
+  workLink.style.border = 'none';
+  contactLink.style.border = 'solid 2px white';
+  homeLink.style.border = 'none';
   resize();
   setTimeout(function () {
     window.location.href = '#contact';
@@ -160,6 +170,10 @@ function contactPageRedirect() {
 function homePageRedirect() {
   removeEltOnRedirect();
   resize();
+  cvLink.style.border = 'none';
+  contactLink.style.border = 'none';
+  workLink.style.border = 'none';
+  homeLink.style.border = 'solid 2px white';
   setTimeout(function () {
     window.location.href = '#intro';
   }, 1600);
@@ -171,6 +185,10 @@ function workPageRedirect() {
   contactSection.style.display = 'none';
   workSection.style.display = 'block';
   chevron.style.display = 'block';
+  cvLink.style.border = 'none';
+  homeLink.style.border = 'none';
+  workLink.style.border = 'solid 2px white';
+  contactLink.style.border = 'none';
   resize();
   setTimeout(function () {
     window.location.href = '#work';
