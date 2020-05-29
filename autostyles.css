@@ -875,7 +875,7 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .card-button .btn {
   margin-left: 0px;
@@ -887,9 +887,17 @@ h2 {
 
 div.card-reveal p {
   text-align: left;
-  font-family: 'Yatra One', cursive;
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 15px;
+  line-height: 1.2;
 }
+
+div.card-reveal h3 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
 /*
   font-family: 'Abril Fatface', cursive;
   font-family: 'Concert One', cursive;
@@ -1391,4 +1399,14 @@ form {
 
 .btn-hidden {
   display: none;
+}
+
+.btn-floating.halfway-fab {
+  bottom: 24px;
+  right: 24px;
+}
+
+.btn-floating {
+  color: rgb(129, 12, 12) !important;
+  background-color: rgb(129, 12, 12) !important;
 }
