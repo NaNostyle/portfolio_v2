@@ -65,7 +65,7 @@ xmlns="http://www.w3.org/1999/xhtml"
       ></path>
       <text class="rotate-center">
         <textPath href="#MyPath" startOffset="50%" text-anchor="middle">
-          Developpeur Web
+          Developpeur Weblastt
         </textPath>
       </text>
     </svg>
