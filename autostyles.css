@@ -1400,4 +1400,42 @@ form {
   display: none;
 }
 
-@media (min);
+main {
+  margin: auto;
+}
+
+@media (min-width: 962px) {
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    max-width: 960px;
+  }
+
+  .menu-items li {
+    margin: 0 10px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .portrait {
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 75px;
+    top: 100px;
+  }
+  #intro {
+    position: relative;
+    height: 100vh;
+    max-width: 962px;
+    margin: auto;
+  }
+}
