@@ -349,6 +349,8 @@ body {
   height: 100%;
   overflow: hidden;
   background: url(./img/chesspic-opti.jpg) no-repeat center center/cover;
+  padding: 0px;
+  margin: 0px;
 }
 
 .video-container video {
@@ -362,6 +364,8 @@ body {
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
   object-fit: cover;
+  padding: 0px;
+  margin: 0px;
 }
 
 .video-container:after {
@@ -373,6 +377,8 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* intro */
@@ -614,6 +620,7 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100vh;
 }
 
 /* curved text */
@@ -717,14 +724,6 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.project {
-  position: relative;
-  width: 80vw;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .img-work-overlay {
@@ -1091,7 +1090,6 @@ div.card-reveal h3 {
 
 #cv {
   background: #e9cda7;
-  width: 100vw;
   margin: auto;
   text-align: center;
   font-family: 'FFF Tusj';
@@ -1373,17 +1371,15 @@ h2 {
 #contact {
   background-color: white;
   text-align: center;
-  width: 100vw;
   margin: auto;
+  height: 100vh;
 }
 
 .contact-container {
-  width: 95vw;
   margin: auto;
 }
 
 form {
-  width: 80vw;
   text-align: left;
 }
 
@@ -1409,4 +1405,56 @@ form {
 .btn-floating {
   color: rgb(129, 12, 12) !important;
   background-color: rgb(129, 12, 12) !important;
+}
+
+@media (min-width: 992px) {
+  main {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .menu-items {
+    display: flex;
+    position: fixed;
+    max-width: 960px;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .menu-items li {
+    padding: 0;
+    margin: 0px 10px;
+    line-height: 0;
+  }
+
+  .menu-items li a {
+    cursor: pointer;
+  }
+
+  #work .card {
+    width: 400px;
+  }
+
+  .portrait {
+    display: block;
+    position: absolute;
+    right: 70px;
+    top: 100px;
+    width: 150px;
+    height: 150px;
+  }
+
+  #intro {
+    position: relative;
+  }
 }
