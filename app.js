@@ -31,9 +31,11 @@ function resize() {
   cvSection.style.height = windowHeight;
   contactSection.style.height = windowHeight;
 }
-resize();
+if (window.innerWidth < 992) {
+  resize();
 
-menuClick.addEventListener('click', toggleMenu);
+  menuClick.addEventListener('click', toggleMenu);
+}
 
 function closeMenu() {
   menu.classList.remove('menu-scale-up');
@@ -49,13 +51,17 @@ function closeMenu() {
 
 function toggleMenu() {
   if (menu.classList.contains('menu-scale-up')) {
-    resize();
-    closeMenu();
+    if (window.innerWidth < 992) {
+      resize();
+      closeMenu();
+    }
     name.style.position = 'relative';
     name.classList.add('name-move-back');
     svg.classList.add('name-intro');
   } else {
-    resize();
+    if (window.innerWidth < 992) {
+      resize();
+    }
     chevron.style.display = 'none';
     window.location.href = '#intro';
     svg.classList.add('svg-fade-out');
@@ -146,7 +152,9 @@ function cvPageRedirect() {
   contactLink.style.border = 'none';
   workLink.style.border = 'none';
   homeLink.style.border = 'none';
-  resize();
+  if (window.innerWidth < 992) {
+    resize();
+  }
   setTimeout(function () {
     window.location.href = '#cv';
   }, 1300);
@@ -161,7 +169,9 @@ function contactPageRedirect() {
   workLink.style.border = 'none';
   contactLink.style.border = 'solid 2px white';
   homeLink.style.border = 'none';
-  resize();
+  if (window.innerWidth < 992) {
+    resize();
+  }
   setTimeout(function () {
     window.location.href = '#contact';
   }, 1600);
@@ -169,7 +179,9 @@ function contactPageRedirect() {
 
 function homePageRedirect() {
   removeEltOnRedirect();
-  resize();
+  if (window.innerWidth < 992) {
+    resize();
+  }
   cvLink.style.border = 'none';
   contactLink.style.border = 'none';
   workLink.style.border = 'none';
@@ -189,7 +201,9 @@ function workPageRedirect() {
   homeLink.style.border = 'none';
   workLink.style.border = 'solid 2px white';
   contactLink.style.border = 'none';
-  resize();
+  if (window.innerWidth < 992) {
+    resize();
+  }
   setTimeout(function () {
     window.location.href = '#work';
   }, 1600);
@@ -200,7 +214,9 @@ var cardsArray = Array.from(cards);
 var progressBarArray = Array.from(progressBar);
 
 window.addEventListener('scroll', function () {
-  resize();
+  if (window.innerWidth < 992) {
+    resize();
+  }
   var wH = window.outerHeight;
   var wS = window.scrollY;
 

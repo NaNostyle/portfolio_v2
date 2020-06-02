@@ -614,6 +614,7 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100vh;
 }
 
 /* curved text */
@@ -717,14 +718,6 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.project {
-  position: relative;
-  width: 80vw;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .img-work-overlay {
@@ -1091,7 +1084,6 @@ div.card-reveal h3 {
 
 #cv {
   background: #e9cda7;
-  width: 100vw;
   margin: auto;
   text-align: center;
   font-family: 'FFF Tusj';
@@ -1373,12 +1365,10 @@ h2 {
 #contact {
   background-color: white;
   text-align: center;
-  width: 100vw;
   margin: auto;
 }
 
 .contact-container {
-  width: 95vw;
   margin: auto;
 }
 
@@ -1409,4 +1399,44 @@ form {
 .btn-floating {
   color: rgb(129, 12, 12) !important;
   background-color: rgb(129, 12, 12) !important;
+}
+
+@media (min-width: 992px) {
+  main {
+    max-width: 960px;
+    margin: auto;
+  }
+  #menu {
+    display: none;
+  }
+
+  .menu-items {
+    display: flex;
+    position: fixed;
+    max-width: 960px;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-items li {
+    padding: 0;
+    margin: 0px 10px;
+    line-height: 0;
+  }
+
+  .menu-items li a {
+    cursor: pointer;
+  }
+
+  #work .card {
+    width: 400px;
+  }
+  #intro {
+    height: 100vh;
+  }
 }
