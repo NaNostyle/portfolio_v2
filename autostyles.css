@@ -14,6 +14,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
 section {
   display: none;
 }
@@ -349,8 +350,6 @@ body {
   height: 100%;
   overflow: hidden;
   background: url(./img/chesspic-opti.jpg) no-repeat center center/cover;
-  padding: 0px;
-  margin: 0px;
 }
 
 .video-container video {
@@ -364,8 +363,6 @@ body {
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
   object-fit: cover;
-  padding: 0px;
-  margin: 0px;
 }
 
 .video-container:after {
@@ -377,8 +374,6 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
-  padding: 0px;
-  margin: 0px;
 }
 
 /* intro */
@@ -620,7 +615,6 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
 }
 
 /* curved text */
@@ -724,6 +718,14 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.project {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .img-work-overlay {
@@ -874,7 +876,7 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .card-button .btn {
   margin-left: 0px;
@@ -886,17 +888,9 @@ h2 {
 
 div.card-reveal p {
   text-align: left;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Yatra One', cursive;
   font-size: 15px;
-  line-height: 1.2;
 }
-
-div.card-reveal h3 {
-  margin: 0px;
-  padding: 0px;
-  margin-bottom: 10px;
-}
-
 /*
   font-family: 'Abril Fatface', cursive;
   font-family: 'Concert One', cursive;
@@ -1090,6 +1084,7 @@ div.card-reveal h3 {
 
 #cv {
   background: #e9cda7;
+  width: 100vw;
   margin: auto;
   text-align: center;
   font-family: 'FFF Tusj';
@@ -1371,15 +1366,17 @@ h2 {
 #contact {
   background-color: white;
   text-align: center;
+  width: 100vw;
   margin: auto;
-  height: 100vh;
 }
 
 .contact-container {
+  width: 95vw;
   margin: auto;
 }
 
 form {
+  width: 80vw;
   text-align: left;
 }
 
@@ -1395,66 +1392,4 @@ form {
 
 .btn-hidden {
   display: none;
-}
-
-.btn-floating.halfway-fab {
-  bottom: 24px;
-  right: 24px;
-}
-
-.btn-floating {
-  color: rgb(129, 12, 12) !important;
-  background-color: rgb(129, 12, 12) !important;
-}
-
-@media (min-width: 992px) {
-  main {
-    max-width: 960px;
-    margin: auto;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  .menu-items {
-    display: flex;
-    position: fixed;
-    max-width: 960px;
-    flex-direction: row;
-    height: 50px;
-    width: 100%;
-    justify-content: space-between;
-    top: 0px;
-    padding: 0;
-    margin: 0;
-    z-index: 100;
-  }
-
-  .menu-items li {
-    padding: 0;
-    margin: 0px 10px;
-    line-height: 0;
-  }
-
-  .menu-items li a {
-    cursor: pointer;
-  }
-
-  #work .card {
-    width: 400px;
-  }
-
-  .portrait {
-    display: block;
-    position: absolute;
-    right: 70px;
-    top: 100px;
-    width: 150px;
-    height: 150px;
-  }
-
-  #intro {
-    position: relative;
-  }
 }
