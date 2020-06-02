@@ -43,15 +43,28 @@ if(isset($_POST['submit'])){
     ></script>
     <title>Menu</title>
   </head>
-  <body class="notranslate">
-    <main>
+  <body>
+    <section class="showcase">
+      <div class="video-container">
+        <video
+          src="https://traversymedia.com/downloads/video.mov"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <div class="content">
+        <h1>Shoot For The Stars</h1>
+        <h3>Full screen video landing page</h3>
+        <a href="#about" class="btn">Read More</a>
+      </div>
+    </section>
+    <!-- <main>
       <section id="intro">
         <div class="menu-click menu-btn" id="menu">
           <div class="menu-text">Menu</div>
         </div>
-        <div class="video-container">
-          <video src="./img/chess.mp4" autoplay muted loop></video>
-        </div>
+
         <svg
           class="svg"
           viewBox="-500 -500 1000 1000"
@@ -236,7 +249,6 @@ if(isset($_POST['submit'])){
           <div class="chevron"></div>
           <div class="chevron"></div>
           <div class="chevron"></div>
-          <!-- <span class="text">Scroll down</span> -->
         </div>
       </section>
       <section id="cv">
@@ -296,13 +308,7 @@ if(isset($_POST['submit'])){
               <li>Créativité</li>
               <li>Autonomie</li>
             </ul>
-            <!-- <p>Travail en équipe</p>
-        <p>Adaptation</p>
-        <p>
-          Résolution de problèmes
-        </p>
-        <p>Créativité</p>
-        <p>Autonomie</p> -->
+
             <a class="waves-effect waves-light btn"
               ><i class="material-icons left notranslate" translate="no"
                 >file_download</i
@@ -377,7 +383,7 @@ if(isset($_POST['submit'])){
           <i class="fab fa-twitter-square fa-5x contact-icon"></i>
         </div>
       </section>
-    </main>
+    </main> -->
     <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
