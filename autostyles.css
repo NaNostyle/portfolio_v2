@@ -350,6 +350,8 @@ body {
   height: 100%;
   overflow: hidden;
   background: url(./img/chesspic-opti.jpg) no-repeat center center/cover;
+  padding: 0;
+  margin: 0;
 }
 
 .video-container video {
@@ -363,6 +365,8 @@ body {
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
   object-fit: cover;
+  padding: 0;
+  margin: 0;
 }
 
 .video-container:after {
@@ -374,6 +378,8 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
+  padding: 0;
+  margin: 0;
 }
 
 /* intro */
@@ -1393,3 +1399,5 @@ form {
 .btn-hidden {
   display: none;
 }
+
+@media (min);
