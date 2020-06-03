@@ -1,0 +1,3 @@
+Premièrement, j'ai créée et organisée le contenu de la page Web en HTML.
+Ensuite, j'ai réalisée avec CSS la mise en forme de la page.
+Enfin, j'ai ajoutée les actions et les animations en utilisant jQuery.
