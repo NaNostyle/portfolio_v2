@@ -17,6 +17,7 @@
 
 section {
   display: none;
+  margin: auto;
 }
 
 h2 {
@@ -1402,6 +1403,7 @@ form {
 
 main {
   margin: auto;
+  max-width: 962px;
 }
 
 @media (min-width: 962px) {
@@ -1413,11 +1415,19 @@ main {
     width: 100%;
     height: 50px;
     justify-content: space-between;
-    max-width: 960px;
+    max-width: 962px;
+    z-index: 100;
   }
 
   .menu-items li {
     margin: 0 10px;
+    margin-bottom: 0px;
+    padding: 0;
+    line-height: initial;
+  }
+
+  .menu-items li a {
+    cursor: pointer;
   }
 
   #menu {
@@ -1437,5 +1447,64 @@ main {
     height: 100vh;
     max-width: 962px;
     margin: auto;
+  }
+
+  #cv {
+    width: 100%;
+  }
+
+  .skills {
+    width: auto;
+  }
+
+  .hard-skills {
+    width: auto;
+  }
+
+  .soft-skills {
+    width: auto;
+  }
+
+  #contact {
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+  #work {
+    width: 100%;
+    position: relative;
+  }
+
+  .input-field {
+    width: 500px;
+  }
+
+  .card {
+    width: 400px;
+    display: block;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
+
+  .chevron-container {
+    position: sticky;
+  }
+
+  #contact h2 {
+    margin-top: 50x;
+    padding: 0;
+  }
+
+  .skills h2 {
+    width: 100%;
   }
 }
