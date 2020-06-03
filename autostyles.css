@@ -1452,9 +1452,9 @@ main {
 }
 
 .hard-skills h2 {
-  color: rgb(129, 12, 12) !important ;
-  font-weight: 700 !important ;
-  font-family: 'FFF Tusj' !important ;
+  color: rgb(129, 12, 12);
+  font-weight: 700;
+  font-family: 'FFF Tusj';
 }
 
 .halfway-fab {
@@ -1466,6 +1466,11 @@ main {
   font-family: 'Barcelony';
   font-size: 30px;
 }
+
+.fa-file-download {
+  margin-right: 10px;
+}
+
 @media (min-width: 962px) {
   .menu-items {
     display: flex;
