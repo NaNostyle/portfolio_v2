@@ -318,7 +318,7 @@ submitBtn.addEventListener('click', function () {
 form.addEventListener('submit', function () {
   setTimeout(function () {
     form.reset();
-  }, 1600);
+  }, 1200);
 });
 
 // submitBtn.addEventListener('click', function () {
