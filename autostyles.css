@@ -1461,6 +1461,11 @@ main {
   right: 30px !important;
   bottom: 65px !important;
 }
+
+.barcelony {
+  font-family: 'Barcelony';
+  font-size: 30px;
+}
 @media (min-width: 962px) {
   .menu-items {
     display: flex;
