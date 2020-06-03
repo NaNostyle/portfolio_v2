@@ -36,7 +36,21 @@ function cvPageRedirect() {
   contactLink.style.border = 'none';
   workLink.style.border = 'none';
   homeLink.style.border = 'none';
-
+  var wS = window.scrollY;
+  if (
+    wS >= cv.offsetTop - cv.clientHeight / 2 &&
+    wS <= cv.offsetTop + cv.clientHeight / 2
+  ) {
+    for (var j = 0; j < progressBarArray.length; j++) {
+      progressBar[j].classList.add('load' + [j + 1]);
+    }
+    softSkillsUl.classList.add('soft-skills-ul-anim');
+  } else {
+    for (var j = 0; j < progressBarArray.length; j++) {
+      progressBar[j].classList.remove('load' + [j + 1]);
+    }
+    softSkillsUl.classList.remove('soft-skills-ul-anim');
+  }
   if (window.innerWidth < 962) {
     resize();
     setTimeout(function () {
@@ -271,6 +285,7 @@ window.addEventListener('scroll', function () {
       chevron.style.display = 'block';
     }
   }
+
   if (
     wS >= cv.offsetTop - cv.clientHeight / 2 &&
     wS <= cv.offsetTop + cv.clientHeight / 2

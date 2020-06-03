@@ -1475,6 +1475,7 @@ main {
 
   #contact {
     width: 100%;
+    height: 100vh;
   }
 
   .contact-container {
