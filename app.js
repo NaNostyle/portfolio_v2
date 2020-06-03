@@ -36,8 +36,9 @@ function cvPageRedirect() {
   contactLink.style.border = 'none';
   workLink.style.border = 'none';
   homeLink.style.border = 'none';
-  resize();
+
   if (window.innerWidth < 962) {
+    resize();
     setTimeout(function () {
       window.location.href = '#cv';
     }, 1600);
@@ -55,8 +56,9 @@ function contactPageRedirect() {
   workLink.style.border = 'none';
   contactLink.style.border = 'solid 2px white';
   homeLink.style.border = 'none';
-  resize();
+
   if (window.innerWidth < 962) {
+    resize();
     setTimeout(function () {
       window.location.href = '#contact';
     }, 1600);
@@ -71,8 +73,9 @@ function homePageRedirect() {
   contactLink.style.border = 'none';
   workLink.style.border = 'none';
   homeLink.style.border = 'solid 2px white';
-  resize();
+
   if (window.innerWidth < 962) {
+    resize();
     setTimeout(function () {
       window.location.href = '#intro';
     }, 1600);
@@ -91,8 +94,9 @@ function workPageRedirect() {
   homeLink.style.border = 'none';
   workLink.style.border = 'solid 2px white';
   contactLink.style.border = 'none';
-  resize();
+
   if (window.innerWidth < 962) {
+    resize();
     setTimeout(function () {
       window.location.href = '#work';
     }, 1600);
@@ -231,8 +235,9 @@ var cardsArray = Array.from(cards);
 var progressBarArray = Array.from(progressBar);
 
 window.addEventListener('scroll', function () {
-  resize();
-
+  if (window.innerWidth < 962) {
+    resize();
+  }
   var wH = window.outerHeight;
   var wS = window.scrollY;
 

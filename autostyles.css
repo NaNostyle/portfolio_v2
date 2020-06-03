@@ -1522,7 +1522,7 @@ main {
   .skills {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 80%;
   }
   .hard-skills,
   .soft-skills {
@@ -1535,5 +1535,14 @@ main {
   }
   .bar-container {
     width: 75%;
+  }
+  #cv {
+    height: 100vh;
+  }
+  .skills .hard-skills {
+    height: 90%;
+  }
+  .soft-skills {
+    height: 90%;
   }
 }
