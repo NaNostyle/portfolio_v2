@@ -70,7 +70,6 @@ function contactPageRedirect() {
   workLink.style.border = 'none';
   contactLink.style.border = 'solid 2px white';
   homeLink.style.border = 'none';
-
   if (window.innerWidth < 962) {
     resize();
     setTimeout(function () {
