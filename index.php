@@ -159,7 +159,7 @@ if(isset($_POST['submit'])){
               <div class="card-button">
                 <a
                   class="waves-effect waves-light btn"
-                  href="./projet2/index.html"
+                  href="./projet2/index.html" target="_blank"
                   >Voir en live</a
                 >
                 <a
