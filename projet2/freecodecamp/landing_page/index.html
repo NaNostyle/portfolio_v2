@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <a href="#"
+          ><img src="./img/apple-logo.png" alt="Apple logo" id="header-img" />
+          <p>La Pomme</p></a
+        >
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#infos" class="nav-link">Informations</a></li>
+          <li><a href="#products" class="nav-link">Produits</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="newsletter">
+        <h1>Bienvenue sur le site de La Pomme</h1>
+        <div class="form-group">
+          <p>Entrez votre adresse email pour vous inscrire à la newsletter</p>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Entrez votre email"
+              required
+            />
+
+            <input id="submit" type="submit" value="Envoyer" class="btn" />
+          </form>
+        </div>
+      </section>
+      <section class="video">
+        <p>Voici notre derniere tablette</p>
+        <video width="400" controls id="video">
+          <source src="./videos/apple_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section id="products">
+        <h2>Voici nos 3 produits phares du moment</h2>
+        <ul>
+          <li>
+            <img src="./img/imac.png" alt="Le macpomme de La Pomme" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              necessitatibus harum in ipsum optio vitae soluta illum dolores
+              praesentium ex!
+            </p>
+          </li>
+          <li>
+            <img src="./img/ipod.png" alt="le podpomme de La Pomme" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              tempore laborum aut dolore, deleniti omnis saepe incidunt eveniet
+              quod temporibus!
+            </p>
+          </li>
+          <li>
+            <img src="./img/macbook.png" alt="le bookpomme de La Pomme" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+              incidunt laborum aliquid illum id non alias rerum, pariatur
+              laudantium earum.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="services">
+        <h2>Nous avons 3 assurances à vous proposer sur nos produits</h2>
+        <ul>
+          <li>
+            <p class="warranty-title">La garantie des dommages</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              dolorum fugit, consectetur exercitationem laborum earum quaerat
+              suscipit saepe aspernatur corrupti.
+            </p>
+            <button class="btn">Souscrire pour 20$</button>
+          </li>
+          <li>
+            <p class="warranty-title">
+              La garantie contre le vol
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              commodi nobis voluptate tempore nesciunt, quaerat autem dicta
+              veniam voluptatibus illo.
+            </p>
+            <button class="btn">Souscrire pour 40$</button>
+          </li>
+          <li>
+            <p class="warranty-title">La garantie contre la perte</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+              earum dolor ipsam tempora, voluptates sit! Totam labore doloribus
+              saepe a.
+            </p>
+            <button class="btn">Souscrire pour 60$</button>
+          </li>
+        </ul>
+      </section>
+      <section id="infos">
+        <h2>Voici les informations sur notre entreprise</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        voluptatem quia necessitatibus, reiciendis itaque voluptas facilis.
+        Provident doloremque cupiditate impedit nihil eos harum odit quaerat
+        ullam velit est, incidunt et reprehenderit modi fugiat temporibus
+        accusantium aperiam. Repellat harum asperiores vero ipsa ut maxime rem
+        dolorem aperiam nesciunt consequuntur et, vitae a quisquam recusandae
+        sequi expedita quidem doloremque qui incidunt deleniti delectus amet
+        eius ad nulla? Debitis, enim? In perspiciatis eligendi veritatis, vero
+        magni corporis aspernatur pariatur veniam illo voluptas, laudantium
+        neque cupiditate. Consequatur voluptatem porro qui eligendi sunt
+        laboriosam! Consequuntur voluptas nostrum deleniti porro illum error
+        soluta laboriosam? Necessitatibus, blanditiis.
+      </section>
+      <footer>
+        Copyright 2020, NaNo
+      </footer>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

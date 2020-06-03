@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  top: 0px;
+  position: sticky;
+  z-index: 2;
+  background-color: #b2dbbf;
+}
+
+header img {
+  width: 100px;
+}
+
+.logo {
+  width: 20%;
+}
+.logo a {
+  display: flex;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: white;
+}
+
+nav a:hover {
+  background-color: #ff1654;
+  color: white;
+}
+
+.logo p {
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+
+#nav-bar ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-bar li {
+  width: 20%;
+  list-style: none;
+  align-self: center;
+}
+
+.newsletter {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: #247ba0;
+  display: inline;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-group {
+  text-align: center;
+  margin: 20px;
+}
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+video {
+  border-radius: 10px;
+}
+
+#products ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+#products img {
+  width: 100px;
+}
+
+#services ul {
+  display: flex;
+}
+
+#services li {
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: #247ba0;
+}
+
+.warranty-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 30px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #ff1654;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#services li {
+  background-color: #70c1b3;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+  background-color: #f3ffbd;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  #services ul {
+    flex-direction: column;
+  }
+  #products ul {
+    flex-direction: column;
+  }
+  header img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  header ul {
+    flex-direction: column;
+  }
+}

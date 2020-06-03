@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.arnaudlarrieu.fr/</loc>
+  <lastmod>2020-02-25T20:33:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/index.html</loc>
+  <lastmod>2020-02-25T20:33:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/about.html</loc>
+  <lastmod>2020-03-01T08:13:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/work.html</loc>
+  <lastmod>2020-03-18T10:33:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/contact.html</loc>
+  <lastmod>2020-02-25T20:33:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/projet1/index.html</loc>
+  <lastmod>2020-02-25T19:10:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/projet2/index.html</loc>
+  <lastmod>2020-03-18T10:44:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/projet3/html/index.html</loc>
+  <lastmod>2020-02-25T19:08:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arnaudlarrieu.fr/projet4/index.html</loc>
+  <lastmod>2020-02-25T19:05:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

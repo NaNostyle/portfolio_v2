@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 oct. 2017, 17:05:28
+    Author     : Chemlali Nejia
+*/
+
+body {
+  background-image: url("../img/bright-background-with-balloons-and-flags-Stock-Vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#list_section {
+  text-align: center;
+  padding: 100px;
+  margin-left: 150px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  list-style-type: none;
+  width: 20%;
+  margin: 0px auto;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.phrase{
+    display: none;
+}

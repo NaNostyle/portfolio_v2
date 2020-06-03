@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulaire de satisfaction</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Bienvenue sur notre formulaire de satisfaction</h1>
+        <p id="description">
+          Ce formulaire nous aidera à améliorer nos services
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <p>Merci de renseigner votre identité</p>
+          <label id="name-label" for="name">Quel est votre nom ?</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Entrez votre nom"
+            required
+          />
+          <label id="email-label" for="email">Quel est votre Email ?</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Entrez votre email"
+            required
+          />
+
+          <label id="number-label" for="number">Quel est votre age ?</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            placeholder="Entrez votre age"
+          />
+          <select id="dropdown" name="region" required>
+            <option disabled selected value>Indiquez votre région</option>
+            <option value="nouvelle-aquitaine">Nouvelle Aquitaine</option>
+            <option value="ile-de-france">Ile de France</option>
+            <option value="bretagne">Bretagne</option>
+            <option value="pays-de-la-loire">Pays de la Loire</option>
+            <option value="centre">Centre</option>
+            <option value="occitanie">Occitanie</option>
+            <option value="auvergne">Auvergne</option>
+            <option value="paca">PACA</option>
+            <option value="bourgogne">Bourgogne</option>
+            <option value="grand-est">Grand Est</option>
+            <option value="hauts-de-france">Hauts de France Est</option>
+            <option value="normandie">Normandie</option>
+            <option value="corse">Corse</option>
+            <option value="outremer">OUtremer</option>
+          </select>
+        </div>
+        <hr />
+        <div class="form-group">
+          <p>Commen évaluez vous la navigation sur notre site ?</p>
+          <label>
+            <input
+              name="evaluation"
+              value="bonne"
+              type="radio"
+              checked
+            />Bonne</label
+          >
+          <label>
+            <input
+              name="evaluation"
+              value="moyenne"
+              type="radio"
+            />Moyenne</label
+          >
+
+          <label
+            ><input
+              name="evaluation"
+              value="mauvaise"
+              type="radio"
+            />Mauvaise</label
+          >
+        </div>
+        <hr />
+        <div class="form-group">
+          <p>Sur quel aspect pouvons nous améliorer le site ?</p>
+          <label
+            ><input name="improve" value="speed" type="checkbox" />Sur la
+            rapidité de chargement du site</label
+          >
+          <label>
+            <input name="improve" value="design" type="checkbox" />Sur le design
+            du site</label
+          >
+          <label
+            ><input name="improve" value="contenu" type="checkbox" />Sur le
+            contenu du site (articles, faq...)</label
+          >
+          <label
+            ><input name="improve" value="navigation" type="checkbox" />Sur la
+            navigation du site</label
+          >
+        </div>
+        <hr />
+        <div class="form-group">
+          <p>Faites nous des suggestions !</p>
+          <textarea
+            name="comments"
+            placeholder="Ecrivez ici"
+            rows="4"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">
+          Envoyer
+        </button>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

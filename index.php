@@ -159,10 +159,14 @@ if(isset($_POST['submit'])){
               <div class="card-button">
                 <a
                   class="waves-effect waves-light btn"
-                  href="./projects/portfolio_v1/dist/index.html"
+                  href="./projet2/index.html"
                   >Voir en live</a
                 >
-                <i class="fab fa-3x fa-github"></i>
+                <a
+                  href="https://github.com/NaNostyle/portfolio_v1"
+                  target="_blank"
+                  ><i class="fab fa-3x fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -245,6 +249,43 @@ if(isset($_POST['submit'])){
                 <a
                   href="https://github.com/NaNostyle/github_finder"
                   target="_blank"
+                  ><i class="fab fa-3x fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./img/projet5-opti.jpg" />
+            </div>
+            <div class="card-content">
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light red activator"
+                ><i class="material-icons">add</i></a
+              >
+              <span class="card-title activator">Mon premier site</span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"
+                ><h3>Mon premier site</h3>
+                <i class="fas fa-2x fa-times"></i
+              ></span>
+
+              <p>
+                Ceci est le premier site web que j'ai réalisé. Il s'agissait
+                d'un exercice que j'ai réalisé a la suite d'un cours donné par
+                le site Openclassrooms. C'est sur ce site que j'ai écris mes
+                premières lignes de code html et css. Avant de devenir
+                Openclassrooms, j'ai appris les bases sur "le site du zéro".
+              </p>
+              <div class="card-button">
+                <a
+                  class="waves-effect waves-light btn"
+                  href="./projet5/index.html"
+                  target="_blank"
+                  >Voir en live</a
+                >
+                <a href="https://github.com/NaNostyle/sdz" target="_blank"
                   ><i class="fab fa-3x fa-github"></i
                 ></a>
               </div>

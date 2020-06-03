@@ -1,0 +1,59 @@
+body {
+	background-color: #E6E6FA;
+	
+}
+
+#hp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+}
+
+h1 {
+	font-family: 'Giddyup Std';
+	font-size: 5em;
+	color: pink;
+	padding: 20px;
+	border: 2px pink dashed;
+	border-radius: 10px;
+}
+
+button {
+	background-color: pink;
+	font-family: 'Gabriola';
+	font-size: 0.3em;
+	border: 2px solid #FFB6C1;
+	border-radius: 5px;
+}
+
+.first {
+	font-family: 'Gabriola';
+	font-size: 1.5em;
+	display: none;
+	width: 500px;
+	border: 2px solid #FFB6C1;
+	border-radius: 10px;
+	background-color: #FEBFD2;
+}
+
+.second {
+	font-family: 'Gabriola';
+	font-size: 1.5em;
+	display: none;
+	width: 500px;
+	border: 2px solid #B0C4DE;
+	border-radius: 10px;
+	background-color: #ADD8E6;
+}
+
+#last {
+	font-family: 'Gabriola';
+	font-size: 1.5em;
+	display: none;
+	width: 500px;
+	border: 2px solid #F0E68C;
+	border-radius: 10px;
+	background-color: #EEE8AA;
+}
