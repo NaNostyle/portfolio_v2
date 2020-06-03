@@ -1406,6 +1406,14 @@ main {
   max-width: 962px;
 }
 
+.skills-titles {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills-titles h2 {
+  width: 42vw;
+}
+
 @media (min-width: 962px) {
   .menu-items {
     display: flex;
@@ -1504,7 +1512,28 @@ main {
     padding: 0;
   }
 
-  .skills h2 {
+  .skills-titles {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .skills-titles h2 {
+    width: 450px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .hard-skills,
+  .soft-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .progress {
     width: 100%;
+  }
+  .bar-container {
+    width: 75%;
   }
 }
