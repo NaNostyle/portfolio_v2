@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
     <meta name="google" value="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Portfolio de Arnaud Larrieu" />
-    <link rel="canonical" href="https://arnaudcastaing.fr" />
+    <link rel="canonical" href="https://arnaudlarrieu.fr" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
