@@ -422,7 +422,7 @@ if(isset($_POST['submit'])){
           <div id="modal1" class="modal">
             <div class="modal-content">
               <h4>Merci pour votre message</h4>
-              <p>Je vous répondrais sous 24 heures</p>
+              <p>Je vous répondrai sous 24 heures</p>
               <br /><br />
               <p class="barcelony">Arnaud</p>
             </div>
